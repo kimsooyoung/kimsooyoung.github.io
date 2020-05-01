@@ -26,7 +26,7 @@ Hugo 설치, Open-Source theme을 사용해서 블로그 구축, GitHub Page로 
 전문 개발자 분들께서 보시기에 너무 쉬울 수도 있어요 :smile::smile:
 {{< /admonition >}}
 
-## 1. Hugo의 소개와 설치 및 기본 사용법
+## 1. Introduction to Hugo
 
 > Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again.
 
