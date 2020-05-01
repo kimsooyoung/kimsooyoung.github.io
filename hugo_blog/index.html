@@ -1,511 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="noodp" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-    <title>
-      How to make Hugo Blog like this?? (Hugo &#43; GitHub pages) | Swimming
-      Kim&#39;s Blog
-    </title>
-    <meta
-      name="Description"
-      content="Let&#39;s make a FULL-FREE blog like this"
-    />
-    <meta
-      property="og:title"
-      content="How to make Hugo Blog like this?? (Hugo &#43; GitHub pages)"
-    />
-    <meta
-      property="og:description"
-      content="Let&#39;s make a FULL-FREE blog like this"
-    />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="http://example.org/hugo_blog/" />
-    <meta
-      property="article:published_time"
-      content="2020-03-12T18:18:59+09:00"
-    />
-    <meta
-      property="article:modified_time"
-      content="2020-03-13T21:29:01+08:00"
-    />
-    <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:title"
-      content="How to make Hugo Blog like this?? (Hugo &#43; GitHub pages)"
-    />
-    <meta
-      name="twitter:description"
-      content="Let&#39;s make a FULL-FREE blog like this"
-    />
-    <meta name="theme-color" content="#ffffff" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <link rel="canonical" href="http://example.org/hugo_blog/" />
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-    <link rel="stylesheet" href="/lib/fontawesome-free/all.min.css" />
-    <link rel="stylesheet" href="/lib/fontawesome-free/all.min.css" />
-    <link rel="stylesheet" href="/css/style.min.css" />
-    <script type="application/ld+json">
-      {
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>How to make Hugo Blog like this?? (Hugo &#43; GitHub pages) | Swimming Kim&#39;s Blog</title>
+        <meta name="Description" content="Let&#39;s make a FULL-FREE blog like this"><meta property="og:title" content="How to make Hugo Blog like this?? (Hugo &#43; GitHub pages)" />
+<meta property="og:description" content="Let&#39;s make a FULL-FREE blog like this" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/hugo_blog/" />
+<meta property="article:published_time" content="2020-03-12T18:18:59+09:00" />
+<meta property="article:modified_time" content="2020-03-13T21:29:01+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How to make Hugo Blog like this?? (Hugo &#43; GitHub pages)"/>
+<meta name="twitter:description" content="Let&#39;s make a FULL-FREE blog like this"/>
+<meta name="theme-color" content="#ffffff">
+<meta name="msapplication-TileColor" content="#da532c">
+<link rel="canonical" href="http://example.org/hugo_blog/" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/css/style.min.css"><script type="application/ld+json">
+    {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
         "headline": "How to make Hugo Blog like this?? (Hugo \x2b GitHub pages)",
         "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "http:\/\/example.org\/hugo_blog\/"
-        },
-        "image": {
-          "@type": "ImageObject",
-          "url": "http:\/\/example.org\/cover.png",
-          "width": 800,
-          "height": 600
-        },
-        "genre": "posts",
-        "keywords": "Hugo, Blog",
-        "wordcount": 3834,
-        "url": "http:\/\/example.org\/hugo_blog\/",
-        "datePublished": "2020-03-12T18:18:59\x2b09:00",
-        "dateModified": "2020-03-13T21:29:01\x2b08:00",
-        "publisher": {
-          "@type": "Organization",
-          "name": "xxxx",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "http:\/\/example.org\/logo.png",
-            "width": 127,
-            "height": 40
-          }
-        },
-        "description": "Let\x27s make a FULL-FREE blog like this"
-      }
-    </script>
-  </head>
-  <body>
-    <script>
-      if (!window.localStorage || !window.localStorage.getItem("theme")) {
-        window.isDark = "light" === "dark";
-      } else {
-        window.isDark =
-          (window.localStorage && window.localStorage.getItem("theme")) ===
-          "dark";
-      }
-      window.isDark && document.body.classList.add("dark-theme");
-    </script>
-    <div class="wrapper">
-      <header class="desktop" id="header-desktop">
-        <div class="header-wrapper">
-          <div class="header-title animated bounceIn">
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/hugo_blog\/"
+        },"image": {
+                "@type": "ImageObject",
+                "url": "http:\/\/example.org\/cover.png",
+                "width":  800 ,
+                "height":  600 
+            },"genre": "posts","keywords": "Hugo, Blog","wordcount":  3835 ,
+        "url": "http:\/\/example.org\/hugo_blog\/","datePublished": "2020-03-12T18:18:59\x2b09:00","dateModified": "2020-03-13T21:29:01\x2b08:00","publisher": {
+                "@type": "Organization",
+                "name": "xxxx",
+                "logo": {
+                "@type": "ImageObject",
+                "url": "http:\/\/example.org\/logo.png",
+                "width":  127 ,
+                "height":  40 
+                }
+            },"description": "Let\x27s make a FULL-FREE blog like this"
+    }
+    </script></head>
+    <body><script>
+            if (!window.localStorage || !window.localStorage.getItem('theme')) {window.isDark = 'light' === 'dark';} else {
+                window.isDark = (window.localStorage && window.localStorage.getItem('theme')) === 'dark';
+            }
+            window.isDark && document.body.classList.add('dark-theme');
+        </script><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title animated bounceIn">
             <a href="/">Swimming Kim&#39;s Blog</a>
-          </div>
-          <div class="menu">
-            <a class="menu-item" href="/categories/">Categories</a
-            ><a class="menu-item" href="/posts/">Posts</a
-            ><a class="menu-item" href="/tags/">Tags</a
-            ><a
-              href="javascript:void(0);"
-              class="theme-switch"
-              title="Switch Theme"
-            >
-              <i class="fas fa-adjust fa-fw"></i>
-            </a>
-          </div>
         </div>
-      </header>
-      <header class="mobile" id="header-mobile">
-        <div class="header-wrapper">
-          <div class="header-container">
+        <div class="menu"><a class="menu-item" href="/categories/">Categories</a><a class="menu-item" href="/posts/">Posts</a><a class="menu-item" href="/tags/">Tags</a><a href="javascript:void(0);" class="theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw "></i>
+            </a>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-wrapper">
+        <div class="header-container">
             <div class="header-title animated bounceIn">
-              <a href="/">Swimming Kim&#39;s Blog</a>
+                <a href="/">Swimming Kim&#39;s Blog</a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
-              <span></span><span></span><span></span>
+                <span></span><span></span><span></span>
             </div>
-          </div>
-          <div class="menu" id="menu-mobile">
-            <a class="menu-item" href="/categories/" title="">Categories</a
-            ><a class="menu-item" href="/posts/" title="">Posts</a
-            ><a class="menu-item" href="/tags/" title="">Tags</a
-            ><a
-              href="javascript:void(0);"
-              class="theme-switch"
-              title="Switch Theme"
-            >
-              <i class="fas fa-adjust fa-fw"></i>
-            </a>
-          </div>
         </div>
-      </header>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a href="javascript:void(0);" class="theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a>
+        </div>
+    </div>
+</header>
 
-      <script>
-        window.desktopHeaderMode = "fixed";
-        window.mobileHeaderMode = "auto";
-      </script>
-      <main class="main">
-        <div class="container">
-          <article class="page single">
-            <h1 class="single-title animated flipInX">
-              How to make Hugo Blog like this?? (Hugo &#43; GitHub pages)
-            </h1>
-            <div class="post-meta">
-              <div class="post-meta-line">
-                <span class="post-author"
-                  ><a
-                    href="/"
-                    title="Author"
-                    rel="noopener noreffer author"
-                    class="author"
-                    ><i class="fas fa-user-circle fa-fw"></i>Swimming Kim</a
-                  > </span
-                >&nbsp;<span class="post-category"
-                  >included in&nbsp;
-                  <span>
-                    <a href="/categories/web">
-                      <i class="far fa-folder fa-fw"></i>Web
-                    </a>
-                  </span></span
-                >
-              </div>
-              <div class="post-meta-line">
-                <i class="far fa-calendar-alt fa-fw"></i
-                ><time datetime="2020-03-12">2020-03-12</time>&nbsp;
-                <i class="fas fa-pencil-alt fa-fw"></i>about 3834 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>18 min&nbsp;
-              </div>
-            </div>
-            <div class="toc" id="toc-auto">
-              <h2 class="toc-title">Contents</h2>
-              <div
-                class="toc-content always-active"
-                id="toc-content-auto"
-              ></div>
+<script>
+    window.desktopHeaderMode = "fixed";
+    window.mobileHeaderMode = "auto";
+</script>
+<main class="main">
+                <div class="container"><article class="page single"><h1 class="single-title animated flipInX">How to make Hugo Blog like this?? (Hugo &#43; GitHub pages)</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Swimming Kim</a>
+</span>&nbsp;<span class="post-category">included in&nbsp;
+                            <span>
+                                <a href="/categories/web">
+                                    <i class="far fa-folder fa-fw"></i>Web
+                                </a>
+                            </span></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2020-03-12>2020-03-12</time>&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>about 3835 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>19 min&nbsp;</div>
+        </div><div class="toc" id="toc-auto">
+                <h2 class="toc-title">Contents</h2>
+                <div class="toc-content always-active" id="toc-content-auto"></div>
             </div>
             <div class="toc" id="toc-static">
-              <details>
-                <summary>
-                  <div class="toc-title">
-                    <span>Contents</span>
-                    <span><i class="details icon fas fa-angle-down"></i></span>
-                  </div>
-                </summary>
-                <div class="toc-content" id="toc-content-static">
-                  <nav id="TableOfContents">
-                    <ul>
-                      <li>
-                        <a href="#hugo-블로그-구축기">Hugo 블로그 구축기</a>
-                        <ul>
-                          <li>
-                            <a href="#이-블로그를-구축하는-과정을-기록합니다"
-                              >이 블로그를 구축하는 과정을 기록합니다.</a
-                            >
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#1-introduction-to-hugo"
-                          >1. Introduction to Hugo</a
-                        >
-                      </li>
-                      <li><a href="#1-requirements">1 Requirements</a></li>
-                      <li>
-                        <a href="#2-installation">2 Installation</a>
-                        <ul>
-                          <li>
-                            <a href="#21-create-new-hugo-site"
-                              >2.1 Create New Hugo Site</a
-                            >
-                          </li>
-                          <li>
-                            <a href="#22-clone-the-theme"
-                              >2.2 Clone the Theme</a
-                            >
-                          </li>
-                          <li>
-                            <a href="#basic-configuration"
-                              >2.3 Basic Configuration</a
-                            >
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#3-create-your-first-post"
-                          >3 Create Your First Post</a
-                        >
-                        <ul>
-                          <li>
-                            <a href="#31-launching-the-website-locally"
-                              >3.1 Launching the Website Locally</a
-                            >
-                          </li>
-                          <li>
-                            <a href="#32-custumize-home-page"
-                              >3.2 Custumize Home Page</a
-                            >
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#4-build-your-website">4 Build your Website</a>
-                      </li>
-                      <li>
-                        <a href="#3-configuration">3 Configuration</a>
-                        <ul>
-                          <li>
-                            <a href="#site-configuration"
-                              >3.1 Site Configuration</a
-                            >
-                          </li>
-                          <li>
-                            <a href="#32-favicons-browserconfig-manifest"
-                              >3.2 Favicons, Browserconfig, Manifest</a
-                            >
-                          </li>
-                          <li>
-                            <a href="#33-add-logo-and-cover-for-seo"
-                              >3.3 Add Logo and Cover for SEO</a
-                            >
-                          </li>
-                          <li>
-                            <a href="#34-style-customization"
-                              >3.4 Style Customization</a
-                            >
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#4-multilingual-and-i18n"
-                          >4 Multilingual and i18n</a
-                        >
-                        <ul>
-                          <li>
-                            <a href="#41-basic-configuration"
-                              >4.1 Basic Configuration</a
-                            >
-                          </li>
-                          <li>
-                            <a href="#42-overwrite-translation-strings"
-                              >4.2 Overwrite Translation Strings</a
-                            >
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </details>
-            </div>
-            <div class="content" id="content">
-              <h2 id="hugo-블로그-구축기">Hugo 블로그 구축기</h2>
-              <p>
-                Hugo 설치, Open-Source theme을 사용해서 블로그 구축, GitHub
-                Page로 배포하는 과정을 다룹니다.
-              </p>
-              <hr />
-              <img
-                width="1500"
-                alt="스크린샷 2020-03-12 오후 8 16 46"
-                src="https://user-images.githubusercontent.com/12381733/76516288-7b08b500-649e-11ea-8760-8fdc95ca5ea1.png"
-              />
-              <hr />
-              <h3 id="이-블로그를-구축하는-과정을-기록합니다">
-                이 블로그를 구축하는 과정을 기록합니다.
-              </h3>
-              <ol>
-                <li>Hugo의 소개와 설치 및 기본 사용법</li>
-                <li>Hugo의 다양한 open-source theme들 소개</li>
-                <li>블로그 포스트를 작성하고 로컬 환경에서 실행</li>
-                <li>GitHub Page를 사용해서 무료로 배포!!</li>
-                <li>배포 이후 유지보수 (새 포스트 추가)</li>
-              </ol>
-              <div class="admonition note">
-                <p class="admonition-title">
-                  <i class="icon fas fa-pencil-alt"></i>Note
-                </p>
-                <div class="admonition-content">
-                  최대한 많은 분들이 읽으실 수 있도록 단어 선택 및 자세한 설명을
-                  하려 노력하였습니다. 전문 개발자 분들께서 보시기에 너무 쉬울
-                  수도 있어요 😄😄
-                </div>
-              </div>
-              <h2 id="1-introduction-to-hugo">1. Introduction to Hugo</h2>
-              <blockquote>
-                <p>
-                  Hugo is a fast and modern static site generator written in Go,
-                  and designed to make website creation fun again.
-                </p>
-              </blockquote>
-              <p>
-                <a
-                  href="https://gohugo.io/"
-                  target="_blank"
-                  rel="noopener noreffer"
-                  >Hugo</a
-                >
-                는 Go언어 기반의 Static Site Generator입니다.
-              </p>
-              <p>
-                워드프레스, Wix등의 다양한 홈페이지 제작 플랫폼들이 있고, 직접
-                원하는 기능들을 구현해서 사용하는 개발자분들도 계십니다.
-              </p>
-              <p>
-                웹 개발의 경험이 많지 않아 이들의 구체적인 차이점은 모르지만,
-                우선 제가 원했던 홈페이지의 스펙과 기능을 설명드리려 합니다.
-              </p>
-              <hr />
-              <ul>
-                <li>블로그 글쓰기가 손쉽게 가능!</li>
-                <li>최대한 빠르게</li>
-                <li>최대한 예쁘게</li>
-                <li>무료로!!</li>
-              </ul>
-              <hr />
-              <p>
-                저에게 있어 위 모든 조건을 만족하는 형태가 Hugo + GitHub Page
-                였습니다.
-              </p>
-              <div class="admonition note">
-                <p class="admonition-title">
-                  <i class="icon fas fa-pencil-alt"></i>Note
-                </p>
-                <div class="admonition-content">
-                  단, <em>블로그 글쓰기가 손쉽게 가능</em> 에서 Hugo는
-                  <a
-                    href="https://ko.wikipedia.org/wiki/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4"
-                    target="_blank"
-                    rel="noopener noreffer"
-                    >markdown</a
-                  >
-                  문법을 사용하기에, 이에 익숙치 않으신 분은 다소 어려움이 있을
-                  수 있습니다.
-                </div>
-              </div>
-              <p>그럼 지금부터 차근차근 시작해 보겠습니다! 🌱🌱</p>
-              <h2 id="1-requirements">1 Requirements</h2>
-              <p>저의 개발 환경은 다음과 같습니다.</p>
-              <ul>
-                <li>Mac OS Catalina</li>
-                <li>Hugo v0.67.0</li>
-                <li>
-                  <a
-                    href="https://git-scm.com/"
-                    target="_blank"
-                    rel="noopener noreffer"
-                    >Git 2.21.1</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://brew.sh/index_ko"
-                    target="_blank"
-                    rel="noopener noreffer"
-                    >homebrew</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/dillonzq/LoveIt"
-                    target="_blank"
-                    rel="noopener noreffer"
-                    >LoveIt Theme</a
-                  >
-                </li>
-              </ul>
-              <div class="admonition note">
-                <p class="admonition-title">
-                  <i class="icon fas fa-pencil-alt"></i>만약 저와 같은 LoveIt
-                  theme을 쓰신다면
-                </p>
-                <div class="admonition-content">
-                  <p>
-                    가장 최신 버전의 hugo를 사용하시기 바랍니다. (적어도
-                    v0.62.0이상) 다음은 제가 사용했던 theme의 주의사항입니다.
-                  </p>
-                  <p>
-                    <em
-                      >Since
-                      <a
-                        href="https://gohugo.io/getting-started/configuration-markup/#markdown-render-hooks"
-                        target="_blank"
-                        rel="noopener noreffer"
-                        >Markdown Render Hooks</a
-                      >
-                      was introduced in the
-                      <a
-                        href="https://gohugo.io/news/0.62.0-relnotes/"
-                        target="_blank"
-                        rel="noopener noreffer"
-                        >Hugo Christmas Edition</a
-                      >
-                      , this theme only supports Hugo versions above
-                      <strong>v0.62.0</strong>.</em
-                    >
-                  </p>
-                </div>
-              </div>
-              <h2 id="2-installation">2 Installation</h2>
-              <p>
-                mac OS를 사용하신다면 terminal을 통해 다음과 같이 손쉽게 설치가
-                가능합니다.
-              </p>
-              <div class="highlight">
-                <div class="chroma">
-                  <table class="lntable">
-                    <tr>
-                      <td class="lntd">
-                        <pre class="chroma"><code><span class="lnt">1
-</span></code></pre>
-                      </td>
-                      <td class="lntd">
-                        <pre
-                          class="chroma"
-                        ><code class="language-bash" data-lang="bash">brew install hugo
-</code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <h3 id="21-create-new-hugo-site">2.1 Create New Hugo Site</h3>
-              <p>첫번째 hugo site를 만들어 봅니다.</p>
-              <p>
-                원하는 작업 폴더로 이동하신 후 terminal에서 다음의 과정을
-                따라하시면 됩니다.
-              </p>
-              <div class="highlight">
-                <div class="chroma">
-                  <table class="lntable">
-                    <tr>
-                      <td class="lntd">
-                        <pre class="chroma"><code><span class="lnt">1
+                <details>
+                    <summary>
+                        <div class="toc-title">
+                            <span>Contents</span>
+                            <span><i class="details icon fas fa-angle-down"></i></span>
+                        </div>
+                    </summary>
+                    <div class="toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#hugo-블로그-구축기">Hugo 블로그 구축기</a>
+      <ul>
+        <li><a href="#이-블로그를-구축하는-과정을-기록합니다">이 블로그를 구축하는 과정을 기록합니다.</a></li>
+      </ul>
+    </li>
+    <li><a href="#1-hugo의-소개와-설치-및-기본-사용법">1. Hugo의 소개와 설치 및 기본 사용법</a></li>
+    <li><a href="#1-requirements">1 Requirements</a></li>
+    <li><a href="#2-installation">2 Installation</a>
+      <ul>
+        <li><a href="#21-create-new-hugo-site">2.1 Create New Hugo Site</a></li>
+        <li><a href="#22-clone-the-theme">2.2 Clone the Theme</a></li>
+        <li><a href="#basic-configuration">2.3 Basic Configuration</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-create-your-first-post">3 Create Your First Post</a>
+      <ul>
+        <li><a href="#31-launching-the-website-locally">3.1 Launching the Website Locally</a></li>
+        <li><a href="#32-custumize-home-page">3.2 Custumize Home Page</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-build-the-website">4 Build the Website</a></li>
+    <li><a href="#3-configuration">3 Configuration</a>
+      <ul>
+        <li><a href="#site-configuration">3.1 Site Configuration</a></li>
+        <li><a href="#32-favicons-browserconfig-manifest">3.2 Favicons, Browserconfig, Manifest</a></li>
+        <li><a href="#33-add-logo-and-cover-for-seo">3.3 Add Logo and Cover for SEO</a></li>
+        <li><a href="#34-style-customization">3.4 Style Customization</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-multilingual-and-i18n">4 Multilingual and i18n</a>
+      <ul>
+        <li><a href="#41-basic-configuration">4.1 Basic Configuration</a></li>
+        <li><a href="#42-overwrite-translation-strings">4.2 Overwrite Translation Strings</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+                </details>
+            </div><div class="content" id="content"><h2 id="hugo-블로그-구축기">Hugo 블로그 구축기</h2>
+<p>Hugo 설치, Open-Source theme을 사용해서 블로그 구축, GitHub Page로 배포하는 과정을 다룹니다.</p>
+<hr>
+<img width="1500" alt="스크린샷 2020-03-12 오후 8 16 46" src="https://user-images.githubusercontent.com/12381733/76516288-7b08b500-649e-11ea-8760-8fdc95ca5ea1.png">
+<hr>
+<h3 id="이-블로그를-구축하는-과정을-기록합니다">이 블로그를 구축하는 과정을 기록합니다.</h3>
+<ol>
+<li>Hugo의 소개와 설치 및 기본 사용법</li>
+<li>Hugo의 다양한 open-source theme들 소개</li>
+<li>블로그 포스트를 작성하고 로컬 환경에서 실행</li>
+<li>GitHub Page를 사용해서 무료로 배포!!</li>
+<li>배포 이후 유지보수 (새 포스트 추가)</li>
+</ol>
+<div class="admonition note">
+            <p class="admonition-title"><i class="icon fas fa-pencil-alt"></i>Note</p>
+            <div class="admonition-content">최대한 많은 분들이 읽으실 수 있도록 단어 선택 및 자세한 설명을 하려 노력하였습니다.
+전문 개발자 분들께서 보시기에 너무 쉬울 수도 있어요 😄😄</div>
+        </div>
+<h2 id="1-hugo의-소개와-설치-및-기본-사용법">1. Hugo의 소개와 설치 및 기본 사용법</h2>
+<blockquote>
+<p>Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again.</p>
+</blockquote>
+<p><a href="https://gohugo.io/" target="_blank" rel="noopener noreffer">Hugo</a>
+는 Go언어 기반의 Static Site Generator입니다.</p>
+<p>워드프레스, Wix등의 다양한 홈페이지 제작 플랫폼들이 있고, 직접 원하는 기능들을 구현해서 사용하는 개발자분들도 계십니다.</p>
+<p>웹 개발의 경험이 많지 않아 이들의 구체적인 차이점은 모르지만, 우선 제가 원했던 홈페이지의 스펙과 기능을 설명드리려 합니다.</p>
+<hr>
+<ul>
+<li>블로그 글쓰기가 손쉽게 가능!</li>
+<li>최대한 빠르게</li>
+<li>최대한 예쁘게</li>
+<li>무료로!!</li>
+</ul>
+<hr>
+<p>저에게 있어 위 모든 조건을 만족하는 형태가 Hugo + GitHub Page 였습니다.</p>
+<div class="admonition note">
+            <p class="admonition-title"><i class="icon fas fa-pencil-alt"></i>Note</p>
+            <div class="admonition-content">단, <em>블로그 글쓰기가 손쉽게 가능</em> 에서 Hugo는 <a href="https://ko.wikipedia.org/wiki/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4" target="_blank" rel="noopener noreffer">markdown</a>
+문법을 사용하기에, 이에 익숙치 않으신 분은 다소 어려움이 있을 수 있습니다.</div>
+        </div>
+<p>그럼 지금부터 차근차근 시작해 보겠습니다! 🌱🌱</p>
+<h2 id="1-requirements">1 Requirements</h2>
+<p>저의 개발 환경은 다음과 같습니다.</p>
+<ul>
+<li>Mac OS Catalina</li>
+<li>Hugo v0.67.0</li>
+<li><a href="https://git-scm.com/" target="_blank" rel="noopener noreffer">Git 2.21.1</a>
+</li>
+<li><a href="https://brew.sh/index_ko" target="_blank" rel="noopener noreffer">homebrew</a>
+</li>
+<li><a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer">LoveIt Theme</a>
+</li>
+</ul>
+<div class="admonition note">
+            <p class="admonition-title"><i class="icon fas fa-pencil-alt"></i>만약 저와 같은 LoveIt theme을 쓰신다면</p>
+            <div class="admonition-content"><p>가장 최신 버전의 hugo를 사용하시기 바랍니다. (적어도 v0.62.0이상)
+다음은 제가 사용했던 theme의 주의사항입니다.</p>
+<p><em>Since <a href="https://gohugo.io/getting-started/configuration-markup/#markdown-render-hooks" target="_blank" rel="noopener noreffer">Markdown Render Hooks</a>
+ was introduced in the <a href="https://gohugo.io/news/0.62.0-relnotes/" target="_blank" rel="noopener noreffer">Hugo Christmas Edition</a>
+, this theme only supports Hugo versions above <strong>v0.62.0</strong>.</em></p>
+</div>
+        </div>
+<h2 id="2-installation">2 Installation</h2>
+<p>mac OS를 사용하신다면 terminal을 통해 다음과 같이 손쉽게 설치가 가능합니다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">brew install hugo
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="21-create-new-hugo-site">2.1 Create New Hugo Site</h3>
+<p>첫번째 hugo site를 만들어 봅니다.</p>
+<p>원하는 작업 폴더로 이동하신 후 terminal에서 다음의 과정을 따라하시면 됩니다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
-</span></code></pre>
-                      </td>
-                      <td class="lntd">
-                        <pre
-                          class="chroma"
-                        ><code class="language-bash" data-lang="bash"><span class="nb">cd</span> &lt;your-working-space-folder&gt;
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> &lt;your-working-space-folder&gt;
 hugo new site &lt;your-site-name&gt;
 <span class="nb">cd</span> &lt;your-site-name&gt;
-</code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <p>위 과정을 거치면 다음과 같은 폴더 구조가 구축됩니다.</p>
-              <div class="highlight">
-                <div class="chroma">
-                  <table class="lntable">
-                    <tr>
-                      <td class="lntd">
-                        <pre class="chroma"><code><span class="lnt"> 1
+</code></pre></td></tr></table>
+</div>
+</div><p>위 과정을 거치면 다음과 같은 폴더 구조가 구축됩니다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -520,12 +254,9 @@ hugo new site &lt;your-site-name&gt;
 </span><span class="lnt">13
 </span><span class="lnt">14
 </span><span class="lnt">15
-</span></code></pre>
-                      </td>
-                      <td class="lntd">
-                        <pre
-                          class="chroma"
-                        ><code class="language-fallback" data-lang="fallback">&lt;your-site-name&gt;
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&lt;your-site-name&gt;
 │    config.toml
 │
 └─── archetypes
@@ -540,156 +271,64 @@ hugo new site &lt;your-site-name&gt;
 └─── static
 │
 └─── themes
-</code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <p>이 중에서 우리가 자주 사용할 부분은 다음과 같습니다.</p>
-              <ul>
-                <li>
-                  config.toml : 홈페이지의 주된 속성들에 대한 configuration이
-                  담기게 됩니다.
-                </li>
-                <li>
-                  content : 새로운 블로그 글을 쓰게 되면, 해당 포스트가 이곳에
-                  담기게 됩니다.
-                </li>
-                <li>themes : 선택한 디자인 theme가 담기게 됩니다.</li>
-              </ul>
-              <p>
-                추후에 디자인 customizing 작업을 하게 되면 <code>layouts</code>,
-                <code>static</code> 폴더들도 사용하게 되지만, 이 글에서는
-                자세하게 다루지 않습니다.
-              </p>
-              <h3 id="22-clone-the-theme">2.2 Clone the Theme</h3>
-              <p>
-                <a
-                  href="https://themes.gohugo.io/"
-                  target="_blank"
-                  rel="noopener noreffer"
-                  >Hugo Themes</a
-                >
-                에는 수많은 다양한 theme들이 있습니다.
-              </p>
-              <hr />
-              <img
-                width="1636"
-                alt="hugo_theme"
-                src="https://user-images.githubusercontent.com/12381733/76591883-e735f800-6534-11ea-986c-9836a035761d.png"
-              />
-              <p>
-                무려 오픈소스이기 때문에 copyright만 잘 명시한다면 개인 용도로
-                얼마든지 사용할 수 있습니다.
-              </p>
-              <p>
-                저는
-                <a
-                  href="https://github.com/dillonzq/LoveIt"
-                  target="_blank"
-                  rel="noopener noreffer"
-                  ><strong>LoveIt</strong></a
-                >
-                라는 theme을 선택하였습니다.
-              </p>
-              <p>theme을 사용하는 3가지 방법이 있습니다.</p>
-              <ol>
-                <li>
-                  해당 theme의
-                  <a
-                    href="https://github.com/dillonzq/LoveIt/releases"
-                    target="_blank"
-                    rel="noopener noreffer"
-                    >최신 배포 버전을 다운
-                    <i class="far fa-file-archive fa-fw"></i> .zip file</a
-                  >
-                  받아 프로젝트의 <code>themes</code> 폴더에 넣기
-                </li>
-              </ol>
-              <ol start="2">
-                <li>git을 사용하여 <code>themes</code> 폴더 안에 clone하기</li>
-              </ol>
-              <div class="highlight">
-                <div class="chroma">
-                  <table class="lntable">
-                    <tr>
-                      <td class="lntd">
-                        <pre class="chroma"><code><span class="lnt">1
+</code></pre></td></tr></table>
+</div>
+</div><p>이 중에서 우리가 자주 사용할 부분은 다음과 같습니다.</p>
+<ul>
+<li>config.toml : 홈페이지의 주된 속성들에 대한 configuration이 담기게 됩니다.</li>
+<li>content : 새로운 블로그 글을 쓰게 되면, 해당 포스트가 이곳에 담기게 됩니다.</li>
+<li>themes : 선택한 디자인 theme가 담기게 됩니다.</li>
+</ul>
+<p>추후에 디자인 customizing 작업을 하게 되면 <code>layouts</code>, <code>static</code> 폴더들도 사용하게 되지만, 이 글에서는 자세하게 다루지 않습니다.</p>
+<h3 id="22-clone-the-theme">2.2 Clone the Theme</h3>
+<p><a href="https://themes.gohugo.io/" target="_blank" rel="noopener noreffer">Hugo Themes</a>
+에는 수많은 다양한 theme들이 있습니다.</p>
+<hr>
+<img width="1636" alt="hugo_theme" src="https://user-images.githubusercontent.com/12381733/76591883-e735f800-6534-11ea-986c-9836a035761d.png">
+<p>무려 오픈소스이기 때문에 copyright만 잘 명시한다면 개인 용도로 얼마든지 사용할 수 있습니다.</p>
+<p>저는 <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer"><strong>LoveIt</strong></a>
+ 라는 theme을 선택하였습니다.</p>
+<p>theme을 사용하기 위해서는</p>
+<ol>
+<li>해당 theme의 <a href="https://github.com/dillonzq/LoveIt/releases" target="_blank" rel="noopener noreffer">최신 배포 버전을 다운 <i class="far fa-file-archive fa-fw"></i> .zip file</a>
+ 받아 프로젝트의 <code>themes</code> 폴더에 넣기</li>
+</ol>
+<ol start="2">
+<li>git을 사용하여 <code>themes</code> 폴더 안에 clone하기</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
-</span></code></pre>
-                      </td>
-                      <td class="lntd">
-                        <pre
-                          class="chroma"
-                        ><code class="language-bash" data-lang="bash"><span class="nb">cd</span> themes
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> themes
 git clone -b master https://github.com/dillonzq/LoveIt.git themes/LoveIt
-</code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <ol start="3">
-                <li>
-                  theme repository를 <code>&lt;your-site-name&gt;</code>의
-                  submodule로 두기
-                </li>
-              </ol>
-              <div class="highlight">
-                <div class="chroma">
-                  <table class="lntable">
-                    <tr>
-                      <td class="lntd">
-                        <pre class="chroma"><code><span class="lnt">1
+</code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li>theme repository를 <code>&lt;your-site-name&gt;</code>의 submodule로 두기</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
-</span></code></pre>
-                      </td>
-                      <td class="lntd">
-                        <pre
-                          class="chroma"
-                        ><code class="language-bash" data-lang="bash">git init
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git init
 git submodule -b master add https://github.com/dillonzq/LoveIt.git themes/LoveIt
-</code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <p>
-                참고로 저는 3번의 방법을 사용하였습니다. 참고로
-                <code>submodule</code>에 대해서 더 알고 싶다면
-                <a
-                  href="https://git-scm.com/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EC%84%9C%EB%B8%8C%EB%AA%A8%EB%93%88"
-                  target="_blank"
-                  rel="noopener noreffer"
-                  >Git- Submodule</a
-                >
-                를 추천드립니다.
-              </p>
-              <p>
-                위와 같이 작업해 두면 나중에 LoveIt theme이 발전해서 더
-                멋있어졌을 때, 바로 적용할 수 있을 것입니다. ✌
-              </p>
-              <h3 id="basic-configuration">2.3 Basic Configuration</h3>
-              <p>방금 가져온 LoveIt theme를 사용해봅시다.</p>
-              <p>
-                이를 위해서 최상단의 config.toml을 다음과 같이 수정합니다. (
-                세부 내용은
-                <a
-                  href="https://hugoloveit.com/theme-documentation-basics/"
-                  target="_blank"
-                  rel="noopener noreffer"
-                  >LoveIt Document</a
-                >
-                를 참고하였습니다. )
-              </p>
-              <div class="highlight">
-                <div class="chroma">
-                  <table class="lntable">
-                    <tr>
-                      <td class="lntd">
-                        <pre class="chroma"><code><span class="lnt"> 1
+</code></pre></td></tr></table>
+</div>
+</div><p>참고로 저는 3번의 방법을 사용하였습니다. 참고로 <code>submodule</code>에 대해서 더 알고 싶다면 <a href="https://git-scm.com/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EC%84%9C%EB%B8%8C%EB%AA%A8%EB%93%88" target="_blank" rel="noopener noreffer">Git- Submodule</a>
+를 추천드립니다.</p>
+<p>위와 같이 작업해 두면 나중에 LoveIt theme이 발전해서 더 멋있어졌을 때, 바로 적용할 수 있을 것입니다. ✌</p>
+<h3 id="basic-configuration">2.3 Basic Configuration</h3>
+<p>방금 가져온 LoveIt theme를 사용해봅시다.</p>
+<p>이를 위해서 최상단의 config.toml을 다음과 같이 수정합니다. ( 세부 내용은 <a href="https://hugoloveit.com/theme-documentation-basics/" target="_blank" rel="noopener noreffer">LoveIt Document</a>
+를 참고하였습니다. )</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -727,12 +366,9 @@ git submodule -b master add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 </span><span class="lnt">36
 </span><span class="lnt">37
 </span><span class="lnt">38
-</span></code></pre>
-                      </td>
-                      <td class="lntd">
-                        <pre
-                          class="chroma"
-                        ><code class="language-toml" data-lang="toml"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s2">&#34;http://example.org/&#34;</span>
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s2">&#34;http://example.org/&#34;</span>
 <span class="c"># [en, zh-cn, fr, ...] determines default content language</span>
 <span class="nx">defaultContentLanguage</span> <span class="p">=</span> <span class="s2">&#34;en&#34;</span>
 <span class="c"># language code</span>
@@ -770,84 +406,42 @@ git submodule -b master add https://github.com/dillonzq/LoveIt.git themes/LoveIt
     <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;/categories/&#34;</span>
     <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
     <span class="nx">weight</span> <span class="p">=</span> <span class="mi">3</span>
-</code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <h2 id="3-create-your-first-post">3 Create Your First Post</h2>
-              <p>
-                결과를 살펴보기 전에 첫 포스트를 작성해 봅시다!! 최상단
-                디렉토리로 들어가서 원하는 이름의 포스트를 만들어 줍니다.
-              </p>
-              <div class="highlight">
-                <div class="chroma">
-                  <table class="lntable">
-                    <tr>
-                      <td class="lntd">
-                        <pre class="chroma"><code><span class="lnt">1
-</span></code></pre>
-                      </td>
-                      <td class="lntd">
-                        <pre
-                          class="chroma"
-                        ><code class="language-bash" data-lang="bash">hugo new posts/first_post.md
-</code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <p>
-                <code>content/posts</code> 폴더 안에 다음과 같은 markdown 파일이
-                만들어졌을 것입니다.
-              </p>
-              <div class="highlight">
-                <div class="chroma">
-                  <table class="lntable">
-                    <tr>
-                      <td class="lntd">
-                        <pre class="chroma"><code><span class="lnt">1
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="3-create-your-first-post">3 Create Your First Post</h2>
+<p>결과를 살펴보기 전에 첫 포스트를 작성해 봅시다!! 최상단 디렉토리로 들어가서 원하는 이름의 포스트를 만들어 줍니다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">hugo new posts/first_post.md
+</code></pre></td></tr></table>
+</div>
+</div><p><code>content/posts</code> 폴더 안에 다음과 같은 markdown 파일이 만들어졌을 것입니다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
-</span></code></pre>
-                      </td>
-                      <td class="lntd">
-                        <pre
-                          class="chroma"
-                        ><code class="language-fallback" data-lang="fallback">---
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">---
 title: &#34;First&#34;
 date: 2020-03-13T14:49:58+09:00
 draft: true
 ---
-</code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <p>
-                <strong><code>---</code>으로 감싸진 부분은 뭘까요??</strong>
-              </p>
-              <p>
-                이는 마치 일기장의 날짜, 날씨와 같이 모든 글에 공통적으로
-                들어가는 부분을 Hugo가 자동 생성해 준 것이라고 볼 수 있습니다.
-              </p>
-              <p>
-                이 부분을 고치고 싶다면
-                <code>archetypes &gt; default.md</code>를 수정하시면 됩니다. 이
-                글 뒷부분에 추가하도록 하겠습니다.
-              </p>
-              <p>지금은 우선, 다음과 새 포스트를 써보도록 하지요</p>
-              <div class="highlight">
-                <div class="chroma">
-                  <table class="lntable">
-                    <tr>
-                      <td class="lntd">
-                        <pre class="chroma"><code><span class="lnt">1
+</code></pre></td></tr></table>
+</div>
+</div><p><strong><code>---</code>으로 감싸진 부분은 뭘까요??</strong></p>
+<p>이는 마치 일기장의 날짜, 날씨와 같이 모든 글에 공통적으로 들어가는 부분을 Hugo가 자동 생성해 준 것이라고 볼 수 있습니다.</p>
+<p>이 부분을 고치고 싶다면 <code>archetypes &gt; default.md</code>를 수정하시면 됩니다. 이 글 뒷부분에 추가하도록 하겠습니다.</p>
+<p>지금은 우선, 다음과 새 포스트를 써보도록 하지요</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -856,12 +450,9 @@ draft: true
 </span><span class="lnt">7
 </span><span class="lnt">8
 </span><span class="lnt">9
-</span></code></pre>
-                      </td>
-                      <td class="lntd">
-                        <pre
-                          class="chroma"
-                        ><code class="language-markdown" data-lang="markdown">---
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">---
 title: &#34;First&#34;
 date: 2020-03-13T14:49:58+09:00
 draft: true
@@ -870,77 +461,36 @@ draft: true
 <span class="gu">## Hello Hugo World
 </span><span class="gu"></span>
 <span class="gh"># 안녕하세요!!
-</span></code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <p>
-                Hugo에서는 Markdown 문법을 기본으로 post를 작성하기 때문에 기본
-                사용법을 익혀두시면 편하실 겁니다.
-              </p>
-              <p>
-                참고로 github의 readme파일 또한 이 문법을 사용하기 때문에
-                개발자라면 한번쯤 사용해보시는 것을 추천드립니다.
-              </p>
-              <div class="admonition note">
-                <p class="admonition-title">
-                  <i class="icon fas fa-pencil-alt"></i>Note
-                </p>
-                <div class="admonition-content">
-                  <p>
-                    <code>draft: true</code>라는 부분이 보이는데요, 저는 이를
-                    <strong>수정 중</strong>이라는 의미로 받아들였습니다.
-                  </p>
-                  <p>
-                    지금은 <code>수정중 : true</code>이며, 다 작성했다면
-                    <code>수정중 : false</code>가 되겠네요.
-                  </p>
-                </div>
-              </div>
-              <div class="admonition tip">
-                <p class="admonition-title">
-                  <i class="icon fas fa-lightbulb"></i>Tip
-                </p>
-                <div class="admonition-content">
-                  <p>예제에서는 first_post.md라는 이름으로 만들었습니다.</p>
-                  <p>
-                    이 이름은 뭐가 되어도 상관이 없지만, 저와 같은 환경으로
-                    진행을 원하신다면 <code>post/</code> 부분은 꼭 붙여 주셔야
-                    합니다.
-                  </p>
-                </div>
-              </div>
-              <h3 id="31-launching-the-website-locally">
-                3.1 Launching the Website Locally
-              </h3>
-              <p>그럼 로컬 환경에서 지금껏 만든 블로그를 돌려봅시다!!</p>
-              <p>terminal을 키고 다음의 커맨드를 입력해주세요</p>
-              <div class="highlight">
-                <div class="chroma">
-                  <table class="lntable">
-                    <tr>
-                      <td class="lntd">
-                        <pre class="chroma"><code><span class="lnt">1
-</span></code></pre>
-                      </td>
-                      <td class="lntd">
-                        <pre
-                          class="chroma"
-                        ><code class="language-bash" data-lang="bash">hugo serve
-</code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <div class="highlight">
-                <div class="chroma">
-                  <table class="lntable">
-                    <tr>
-                      <td class="lntd">
-                        <pre class="chroma"><code><span class="lnt"> 1
+</span></code></pre></td></tr></table>
+</div>
+</div><p>Hugo에서는 Markdown 문법을 기본으로 post를 작성하기 때문에 기본 사용법을 익혀두시면 편하실 겁니다.</p>
+<p>참고로 github의 readme파일 또한 이 문법을 사용하기 때문에 개발자라면 한번쯤 사용해보시는 것을 추천드립니다.</p>
+<div class="admonition note">
+            <p class="admonition-title"><i class="icon fas fa-pencil-alt"></i>Note</p>
+            <div class="admonition-content"><p><code>draft: true</code>라는 부분이 보이는데요, 저는 이를 <strong>수정 중</strong>이라는 의미로 받아들였습니다.</p>
+<p>지금은 <code>수정중 : true</code>이며, 다 작성했다면 <code>수정중 : false</code>가 되겠네요.</p>
+</div>
+        </div>
+<div class="admonition tip">
+            <p class="admonition-title"><i class="icon fas fa-lightbulb"></i>Tip</p>
+            <div class="admonition-content"><p>예제에서는 first_post.md라는 이름으로 만들었습니다.</p>
+<p>이 이름은 뭐가 되어도 상관이 없지만, 저와 같은 환경으로 진행을 원하신다면 <code>post/</code> 부분은 꼭 붙여 주셔야 합니다.</p>
+</div>
+        </div>
+<h3 id="31-launching-the-website-locally">3.1 Launching the Website Locally</h3>
+<p>그럼 로컬 환경에서 지금껏 만든 블로그를 돌려봅시다!!</p>
+<p>terminal을 키고 다음의 커맨드를 입력해주세요</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">hugo serve
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -959,12 +509,9 @@ draft: true
 </span><span class="lnt">17
 </span><span class="lnt">18
 </span><span class="lnt">19
-</span></code></pre>
-                      </td>
-                      <td class="lntd">
-                        <pre
-                          class="chroma"
-                        ><code class="language-bash" data-lang="bash">                   <span class="p">|</span> EN
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">                   <span class="p">|</span> EN
 -------------------+-----
   Pages            <span class="p">|</span> <span class="m">15</span>
   Paginator pages  <span class="p">|</span>  <span class="m">0</span>
@@ -983,98 +530,39 @@ Serving pages from memory
 Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
 Web Server is available at http://localhost:1313/ <span class="o">(</span><span class="nb">bind</span> address 127.0.0.1<span class="o">)</span>
 Press Ctrl+C to stop
-</code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <p>다음과 같은 콜솔 화면이 나타났나요??</p>
-              <p>
-                <strong
-                  >블로그 화면을 보고 싶다면
-                  <a
-                    href="http://localhost:1313"
-                    target="_blank"
-                    rel="noopener noreffer"
-                    ><code>http://localhost:1313</code></a
-                  >
-                  로 접속해 보세요!!</strong
-                >
-              </p>
-              <div class="admonition tip">
-                <p class="admonition-title">
-                  <i class="icon fas fa-lightbulb"></i>Tip
-                </p>
-                <div class="admonition-content">
-                  <p>
-                    분명 우리는 글을 수정하면서 잘 작성되고 있는지, 다른
-                    사람들에게는 어떻게 보여질지를 확인하고 싶을 것입니다.
-                  </p>
-                  <p>
-                    Hugo는 매우 고맙게도 <code>hugo serve</code>를 통해
-                    포스트들의 변경 내용을 즉각적으로 반영 가능해서 보여줍니다.
-                  </p>
-                </div>
-              </div>
-              <img
-                width="1608"
-                alt="스크린샷 2020-03-13 오후 3 09 20"
-                src="https://user-images.githubusercontent.com/12381733/76594487-a641e180-653c-11ea-9389-e0ca94db1e6b.png"
-              />
-              <p>
-                <strong
-                  >축하드립니다!! Hugo 블로그를 갖게 되셨군요!! 👏👏👏</strong
-                >
-              </p>
-              <p>이제 customizing, deploy를 할 차례입니다</p>
-              <h3 id="32-custumize-home-page">3.2 Custumize Home Page</h3>
-              <ul>
-                <li>기본 theme도 훌륭하지만 디자인을 수정하고 싶다.</li>
-                <li>댓글 쓰기, 수학 수식 표현 등의 기능을 넣고 싶다.</li>
-                <li>내가 디자인한 로고를 블로그에 삽입하고 싶다.</li>
-              </ul>
-              <p>
-                고맙게도, 위와 같은 기능들을 대부분의 Hugo theme들이 기본적으로
-                제공하고 있습니다.
-              </p>
-              <p>
-                다만, <code>css</code>, <code>styled components</code>등의 웹
-                디자인을 잘 다루신다 해도 주의해야 할 점이 있습니다.
-              </p>
-              <div class="admonition note">
-                <p class="admonition-title">
-                  <i class="icon fas fa-pencil-alt"></i>Note
-                </p>
-                <div class="admonition-content">
-                  <strong>theme내의 코드를 절대 수정하지 말 것!!!</strong>
-                </div>
-              </div>
-              <p>
-                가장 우선적으로 사용하고 계신 theme의 <code>Document</code>를
-                참조하시길 바랍니다.
-              </p>
-              <p>
-                제가 사용하고 있는 <code>LoveIt theme</code>도 해당 내용들에
-                대한
-                <a
-                  href="https://hugoloveit.com/"
-                  target="_blank"
-                  rel="noopener noreffer"
-                  >Document</a
-                >
-                들을 제공하고 있습니다.
-              </p>
-              <p>
-                해당 페이지를 들어가보면, 다음과 같은 부분을 config.toml에
-                삽입하라고 조언하고 있습니다.
-              </p>
-              <div class="highlight">
-                <div class="chroma">
-                  <table class="lntable">
-                    <tr>
-                      <td class="lntd">
-                        <pre class="chroma"><code><span class="lnt">  1
+</code></pre></td></tr></table>
+</div>
+</div><p>다음과 같은 콜솔 화면이 나타났나요??</p>
+<p><strong>블로그 화면을 보고 싶다면 <a href="http://localhost:1313" target="_blank" rel="noopener noreffer"><code>http://localhost:1313</code></a>
+로 접속해 보세요!!</strong></p>
+<div class="admonition tip">
+            <p class="admonition-title"><i class="icon fas fa-lightbulb"></i>Tip</p>
+            <div class="admonition-content"><p>분명 우리는 글을 수정하면서 잘 작성되고 있는지, 다른 사람들에게는 어떻게 보여질지를 확인하고 싶을 것입니다.</p>
+<p>Hugo는 매우 고맙게도 <code>hugo serve</code>를 통해 포스트들의 변경 내용을 즉각적으로 반영 가능해서 보여줍니다.</p>
+</div>
+        </div>
+<img width="1608" alt="스크린샷 2020-03-13 오후 3 09 20" src="https://user-images.githubusercontent.com/12381733/76594487-a641e180-653c-11ea-9389-e0ca94db1e6b.png">
+<p><strong>축하드립니다!! Hugo 블로그를 갖게 되셨군요!! 👏👏👏</strong></p>
+<p>이제 customizing, deploy를 할 차례입니다</p>
+<h3 id="32-custumize-home-page">3.2 Custumize Home Page</h3>
+<ul>
+<li>기본 theme도 훌륭하지만 디자인을 수정하고 싶다.</li>
+<li>댓글 쓰기, 수학 수식 표현 등의 기능을 넣고 싶다.</li>
+<li>내가 디자인한 로고를 블로그에 삽입하고 싶다.</li>
+</ul>
+<p>고맙게도, 위와 같은 기능들을 대부분의 Hugo theme들이 기본적으로 제공하고 있습니다.</p>
+<p>다만, <code>css</code>, <code>styled components</code>등의 웹 디자인을 잘 다루신다 해도 주의해야 할 점이 있습니다.</p>
+<div class="admonition note">
+            <p class="admonition-title"><i class="icon fas fa-pencil-alt"></i>Note</p>
+            <div class="admonition-content"><strong>theme내의 코드를 절대 수정하지 말 것!!!</strong></div>
+        </div>
+<p>가장 우선적으로 사용하고 계신 theme의 <code>Document</code>를 참조하시길 바랍니다.</p>
+<p>제가 사용하고 있는 <code>LoveIt theme</code>도 해당 내용들에 대한 <a href="https://hugoloveit.com/" target="_blank" rel="noopener noreffer">Document</a>
+들을 제공하고 있습니다.</p>
+<p>해당 페이지를 들어가보면, 다음과 같은 부분을 config.toml에 삽입하라고 조언하고 있습니다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">  1
 </span><span class="lnt">  2
 </span><span class="lnt">  3
 </span><span class="lnt">  4
@@ -1417,12 +905,9 @@ Press Ctrl+C to stop
 </span><span class="lnt">341
 </span><span class="lnt">342
 </span><span class="lnt">343
-</span></code></pre>
-                      </td>
-                      <td class="lntd">
-                        <pre
-                          class="chroma"
-                        ><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
   <span class="c"># LoveIt theme version</span>
   <span class="nx">version</span> <span class="p">=</span> <span class="s2">&#34;0.1.X&#34;</span>
   <span class="c"># site description</span>
@@ -1765,128 +1250,53 @@ Press Ctrl+C to stop
   <span class="nx">section</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;HTML&#34;</span><span class="p">,</span> <span class="s2">&#34;RSS&#34;</span><span class="p">]</span>
   <span class="nx">taxonomy</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;HTML&#34;</span><span class="p">,</span> <span class="s2">&#34;RSS&#34;</span><span class="p">]</span>
   <span class="nx">taxonomyTerm</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;HTML&#34;</span><span class="p">]</span>
-</code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <p>
-                위 작업을 마치고 몇가지 개인 정보들 및 설정을 바꾸어 주었습니다.
-              </p>
-              <ul>
-                <li><code>avatarURL</code></li>
-                <li>
-                  <code>params.social</code> 내의 값 (Github, LinkedIn, Facebook
-                  계정 정보)
-                </li>
-                <li>
-                  post내에서 emoji를 쓰고 싶었기에
-                  <code>enableEmoji = true</code>를 추가하였습니다. (참고 -
-                  <a
-                    href="https://gist.github.com/rxaviers/7360908"
-                    target="_blank"
-                    rel="noopener noreffer"
-                    >github markdown emoji markup</a
-                  >
-                  )
-                </li>
-              </ul>
-              <p>
-                추가적으로, 저는 기본 테마에도 만족했기에 특별한 디자인 수정을
-                하지는 않았지만 폰트 크기가 너무 커서 줄이고 싶었습니다.
-              </p>
-              <p>
-                폰트 크기를 바꾸고 싶다&hellip; 가장 먼저
-                <code>font-size</code>를 변경하는 방법이 떠오를 것입니다.
-              </p>
-              <p>하지만, 앞서 말하였듯이</p>
-              <div class="admonition note">
-                <p class="admonition-title">
-                  <i class="icon fas fa-pencil-alt"></i>Note
-                </p>
-                <div class="admonition-content">
-                  <ol>
-                    <li>
-                      <strong>절대로</strong> <code>themes</code>안의 내용을
-                      바꾸지 마세요!!
-                    </li>
-                    <li><strong>Document를 먼저 살펴보세요!!</strong></li>
-                  </ol>
-                </div>
-              </div>
-              <p>
-                2번을 따라서 다음의 Document 내용을 봅시다.
-                <a
-                  href="https://hugoloveit.com/theme-documentation-basics/"
-                  target="_blank"
-                  rel="noopener noreffer"
-                  >LoveIt Theme Documentation - Basics</a
-                >
-              </p>
-              <div class="admonition note">
-                <p class="admonition-title">
-                  <i class="icon fas fa-pencil-alt"></i>Note
-                </p>
-                <div class="admonition-content">
-                  <h3 id="34-style-customization">3.4 Style Customization</h3>
-                  <p>
-                    <strong>LoveIt</strong> theme has been built to be as
-                    configurable as possible by defining custom
-                    <code>.scss</code> style files.
-                  </p>
-                  <p>
-                    The directory including the custom <code>.scss</code> style
-                    files is <code>config/css</code> relative to
-                    <strong>your project path</strong>.
-                  </p>
-                  <p>
-                    In <code>_override.scss</code>, you can override the
-                    variables in
-                    <code>themes/LoveIt/assets/css/_variables.scss</code> to
-                    customize the style.
-                  </p>
-                  <p>Here is a example:</p>
-                  <div class="highlight">
-                    <div class="chroma">
-                      <table class="lntable">
-                        <tr>
-                          <td class="lntd">
-                            <pre class="chroma"><code><span class="lnt">1
+</code></pre></td></tr></table>
+</div>
+</div><p>위 작업을 마치고 몇가지 개인 정보들 및 설정을 바꾸어 주었습니다.</p>
+<ul>
+<li><code>avatarURL</code></li>
+<li><code>params.social</code> 내의 값 (Github, LinkedIn, Facebook 계정 정보)</li>
+<li>post내에서 emoji를 쓰고 싶었기에 <code>enableEmoji = true</code>를 추가하였습니다. (참고 - <a href="https://gist.github.com/rxaviers/7360908" target="_blank" rel="noopener noreffer">github markdown emoji markup</a>
+)</li>
+</ul>
+<p>추가적으로, 저는 기본 테마에도 만족했기에 특별한 디자인 수정을 하지는 않았지만 폰트 크기가 너무 커서 줄이고 싶었습니다.</p>
+<p>폰트 크기를 바꾸고 싶다&hellip; 가장 먼저 <code>font-size</code>를 변경하는 방법이 떠오를 것입니다.</p>
+<p>하지만, 앞서 말하였듯이</p>
+<div class="admonition note">
+            <p class="admonition-title"><i class="icon fas fa-pencil-alt"></i>Note</p>
+            <div class="admonition-content"><ol>
+<li><strong>절대로</strong> <code>themes</code>안의 내용을 바꾸지 마세요!!</li>
+<li><strong>Document를 먼저 살펴보세요!!</strong></li>
+</ol></div>
+        </div>
+<p>2번을 따라서 다음의 Document 내용을 봅시다. <a href="https://hugoloveit.com/theme-documentation-basics/" target="_blank" rel="noopener noreffer">LoveIt Theme Documentation - Basics</a>
+</p>
+<div class="admonition note">
+            <p class="admonition-title"><i class="icon fas fa-pencil-alt"></i>Note</p>
+            <div class="admonition-content"><h3 id="34-style-customization">3.4 Style Customization</h3>
+<p><strong>LoveIt</strong> theme has been built to be as configurable as possible by defining custom <code>.scss</code> style files.</p>
+<p>The directory including the custom <code>.scss</code> style files is <code>config/css</code> relative to <strong>your project path</strong>.</p>
+<p>In <code>_override.scss</code>, you can override the variables in <code>themes/LoveIt/assets/css/_variables.scss</code> to customize the style.</p>
+<p>Here is a example:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
-</span></code></pre>
-                          </td>
-                          <td class="lntd">
-                            <pre
-                              class="chroma"
-                            ><code class="language-scss" data-lang="scss"><span class="k">@import</span> <span class="sx">url(&#34;https://fonts.googleapis.com/css?family=Fira+Mono:400,700&amp;display=swap&amp;subset=latin-ext&#34;)</span><span class="p">;</span>
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-scss" data-lang="scss"><span class="k">@import</span> <span class="sx">url(&#34;https://fonts.googleapis.com/css?family=Fira+Mono:400,700&amp;display=swap&amp;subset=latin-ext&#34;)</span><span class="p">;</span>
 <span class="nv">$code-font-family</span><span class="o">:</span> <span class="n">Fira</span> <span class="n">Mono</span><span class="o">,</span> <span class="n">Source</span> <span class="n">Code</span> <span class="n">Pro</span><span class="o">,</span> <span class="n">Menlo</span><span class="o">,</span> <span class="n">Consolas</span><span class="o">,</span> <span class="n">Monaco</span><span class="o">,</span>
   <span class="no">monospace</span><span class="p">;</span>
-</code></pre>
-                          </td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                  <p>
-                    In <code>_custom.scss</code>, you can add some css style
-                    code to customize the style.
-                  </p>
-                </div>
-              </div>
-              <p>
-                프로젝트 디렉토리에 <code>config/css</code> 폴더를 만들고, 해당
-                폴더 안에 <code>_custom.scss</code>, 혹은
-                <code>_override.scss</code> 파일을 만들어서 커스터마이징 및 기존
-                scss를 override하라고 조언하고 있습니다.
-              </p>
-              <div class="highlight">
-                <div class="chroma">
-                  <table class="lntable">
-                    <tr>
-                      <td class="lntd">
-                        <pre class="chroma"><code><span class="lnt"> 1
+</code></pre></td></tr></table>
+</div>
+</div><p>In <code>_custom.scss</code>, you can add some css style code to customize the style.</p>
+</div>
+        </div>
+<p>프로젝트 디렉토리에 <code>config/css</code> 폴더를 만들고, 해당 폴더 안에 <code>_custom.scss</code>, 혹은 <code>_override.scss</code> 파일을 만들어서 커스터마이징 및 기존 scss를 override하라고 조언하고 있습니다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -1899,12 +1309,9 @@ Press Ctrl+C to stop
 </span><span class="lnt">11
 </span><span class="lnt">12
 </span><span class="lnt">13
-</span></code></pre>
-                      </td>
-                      <td class="lntd">
-                        <pre
-                          class="chroma"
-                        ><code class="language-scss" data-lang="scss"><span class="c1">// ==============================
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-scss" data-lang="scss"><span class="c1">// ==============================
 </span><span class="c1">// Variables
 </span><span class="c1">// ==============================
 </span><span class="c1"></span>
@@ -1917,317 +1324,126 @@ Press Ctrl+C to stop
 <span class="nv">$global-line-height</span><span class="o">:</span> <span class="mi">1</span><span class="mf">.5</span><span class="kt">rem</span><span class="p">;</span>
 
 <span class="nc">...</span>
-</code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <p>
-                <code>themes/LoveIt/assets/css/_variables.scss</code>는 위와
-                같이 시작하는 sass입니다. 전체 글자 크기에 해당하는
-                <code>$global-font-family</code> 값을 더 작게 바꾸어 보겠습니다.
-              </p>
-              <div class="highlight">
-                <div class="chroma">
-                  <table class="lntable">
-                    <tr>
-                      <td class="lntd">
-                        <pre class="chroma"><code><span class="lnt">1
-</span></code></pre>
-                      </td>
-                      <td class="lntd">
-                        <pre
-                          class="chroma"
-                        ><code class="language-scss" data-lang="scss"><span class="nv">$global-font-size</span><span class="o">:</span> <span class="mi">0</span><span class="mf">.8</span><span class="kt">rem</span><span class="p">;</span>
-</code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <p>
-                위 작업을 마친 후 <code>hugo serve</code>를 실행시켜서 글자
-                크기가 더 작아진 것을 확인해보세요.
-              </p>
-              <h2 id="4-build-your-website">4 Build your Website</h2>
-              <p>지금까지의 과정을 잘 따라왔다면, 다음과 같이</p>
-              <img
-                width="1642"
-                alt="before_deploy"
-                src="https://user-images.githubusercontent.com/12381733/77080212-613a1580-6a3c-11ea-871b-973c0bc16348.png"
-              />
-              <ul>
-                <li>커스텀 아이콘과 소셜 계정들이 연동되어 있는 메인 페이지</li>
-                <li>1개 이상의 포스트와 description</li>
-              </ul>
-              <p>
-                위의 요소들을 지닌 멋진 <code>Hugo</code> 블로그를 갖게 되셨을
-                것입니다.
-              </p>
-              <p>
-                그럼 이제는 <code>Github Pages</code>를 사용해서 위 블로그를
-                배포해 볼 차례입니다.
-              </p>
-              <p>
-                이 작업을 통해서
-                <code>https://&lt;your-github-id&gt;.github.io/</code> 주소로
-                누구나 들어와서 볼 수 있는 블로그를 갖게 될 것입니다.
-              </p>
-              <p>
-                When your site is ready to deploy, run the following command:
-              </p>
-              <div class="highlight">
-                <div class="chroma">
-                  <table class="lntable">
-                    <tr>
-                      <td class="lntd">
-                        <pre class="chroma"><code><span class="lnt">1
-</span></code></pre>
-                      </td>
-                      <td class="lntd">
-                        <pre
-                          class="chroma"
-                        ><code class="language-bash" data-lang="bash">hugo
-</code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <p>
-                A <code>public</code> folder will be generated, containing all
-                static content and assets for your website. It can now be
-                deployed on any web server.
-              </p>
-              <div class="admonition tip">
-                <p class="admonition-title">
-                  <i class="icon fas fa-lightbulb"></i>Tip
-                </p>
-                <div class="admonition-content">
-                  The website can be automatically published and hosted with
-                  <a
-                    href="https://www.netlify.com/"
-                    target="_blank"
-                    rel="noopener noreffer"
-                    >Netlify</a
-                  >
-                  (Read more about
-                  <a
-                    href="https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/"
-                    target="_blank"
-                    rel="noopener noreffer"
-                    >Automated HUGO deployments with Netlify</a
-                  >
-                  ). Alternatively, you can use
-                  <a
-                    href="https://gohugo.io/hosting-and-deployment/hosting-on-aws-amplify/"
-                    target="_blank"
-                    rel="noopener noreffer"
-                    >AWS Amplify</a
-                  >
-                  ,
-                  <a
-                    href="https://gohugo.io/hosting-and-deployment/hosting-on-github/"
-                    target="_blank"
-                    rel="noopener noreffer"
-                    >Github pages</a
-                  >
-                  ,
-                  <a
-                    href="https://gohugo.io/hosting-and-deployment/hosting-on-render/"
-                    target="_blank"
-                    rel="noopener noreffer"
-                    >Render</a
-                  >
-                  and more&hellip;
-                </div>
-              </div>
-              <h2 id="3-configuration">3 Configuration</h2>
-              <h3 id="site-configuration">3.1 Site Configuration</h3>
-              <p>
-                In addition to
-                <a
-                  href="https://gohugo.io/overview/configuration/"
-                  target="_blank"
-                  rel="noopener noreffer"
-                  >Hugo global configuration</a
-                >
-                and
-                <a href="#basic-configuration" rel="noopener noreffer"
-                  >menu configuration</a
-                >
-                , <strong>LoveIt</strong> lets you define the following
-                parameters in your site configuration (here is a
-                <code>config.toml</code>, whose values are default).
-              </p>
-              <div class="admonition note">
-                <p class="admonition-title">
-                  <i class="icon fas fa-pencil-alt"></i>Note
-                </p>
-                <div class="admonition-content">
-                  Note that some of these parameters are explained in details in
-                  other sections of this documentation.
-                </div>
-              </div>
-              <p>
-                <figure>
-                  <a
-                    class="lightgallery"
-                    href="/images/theme-documentation-basics/complete-configuration-preview.png"
-                    title="Complete configuration preview"
-                    data-thumbnail="/images/theme-documentation-basics/complete-configuration-preview.png"
-                    data-sub-html="<h2>Complete configuration preview</h2><p>Complete configuration preview</p>"
-                  >
-                    <img
-                      class="lazyload"
-                      src="/svg/loading.min.svg"
-                      data-sizes="auto"
-                      data-srcset="/images/theme-documentation-basics/complete-configuration-preview.png, /images/theme-documentation-basics/complete-configuration-preview.png 1.5x, /images/theme-documentation-basics/complete-configuration-preview.png 2x"
-                      data-src="/images/theme-documentation-basics/complete-configuration-preview.png"
-                      alt="Complete configuration preview"
-                    />
-                  </a>
-                  <figcaption class="image-caption">
-                    Complete configuration preview
-                  </figcaption>
-                </figure>
-              </p>
-              <h3 id="32-favicons-browserconfig-manifest">
-                3.2 Favicons, Browserconfig, Manifest
-              </h3>
-              <p>It is recommended to put your own favicons:</p>
-              <ul>
-                <li>apple-touch-icon.png (180x180)</li>
-                <li>favicon-32x32.png (32x32)</li>
-                <li>favicon-16x16.png (16x16)</li>
-                <li>mstile-150x150.png (150x150)</li>
-                <li>android-chrome-192x192.png (192x192)</li>
-                <li>android-chrome-512x512.png (512x512)</li>
-              </ul>
-              <p>
-                into <code>/static</code>. They’re easily created via
-                <a
-                  href="https://realfavicongenerator.net/"
-                  target="_blank"
-                  rel="noopener noreffer"
-                  >https://realfavicongenerator.net/</a
-                >
-                .
-              </p>
-              <p>
-                Customize <code>browserconfig.xml</code> and
-                <code>site.webmanifest</code> to set theme-color and
-                background-color.
-              </p>
-              <h3 id="33-add-logo-and-cover-for-seo">
-                3.3 Add Logo and Cover for SEO
-              </h3>
-              <p>
-                Add a logo image (127x40) and a cover image (800x600) in the
-                <code>static</code> directory.
-              </p>
-              <h3 id="34-style-customization">3.4 Style Customization</h3>
-              <p>
-                <strong>LoveIt</strong> theme has been built to be as
-                configurable as possible by defining custom
-                <code>.scss</code> style files.
-              </p>
-              <p>
-                The directory including the custom <code>.scss</code> style
-                files is <code>config/css</code> relative to
-                <strong>your project path</strong>.
-              </p>
-              <p>
-                In <code>_override.scss</code>, you can override the variables
-                in <code>themes/LoveIt/assets/css/_variables.scss</code> to
-                customize the style.
-              </p>
-              <p>Here is a example:</p>
-              <div class="highlight">
-                <div class="chroma">
-                  <table class="lntable">
-                    <tr>
-                      <td class="lntd">
-                        <pre class="chroma"><code><span class="lnt">1
+</code></pre></td></tr></table>
+</div>
+</div><p><code>themes/LoveIt/assets/css/_variables.scss</code>는 위와 같이 시작하는 sass입니다.
+전체 글자 크기에 해당하는 <code>$global-font-family</code> 값을 더 작게 바꾸어 보겠습니다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-scss" data-lang="scss"><span class="nv">$global-font-size</span><span class="o">:</span> <span class="mi">0</span><span class="mf">.8</span><span class="kt">rem</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>위 작업을 마친 후 <code>hugo serve</code>를 실행시켜서 글자 크기가 더 작아진 것을 확인해보세요.</p>
+<h2 id="4-build-the-website">4 Build the Website</h2>
+<p>지금까지의 과정을 잘 따라왔다면, 다음과 같이</p>
+<img width="1642" alt="before_deploy" src="https://user-images.githubusercontent.com/12381733/77080212-613a1580-6a3c-11ea-871b-973c0bc16348.png">
+<ul>
+<li>커스텀 아이콘과 소셜 계정들이 연동되어 있는 메인 페이지</li>
+<li>1개 이상의 포스트와 description</li>
+</ul>
+<p>위의 요소들을 지닌 멋진 <code>Hugo</code> 블로그를 갖게 되셨을 것입니다.</p>
+<p>그럼 이제는 <code>Github Pages</code>를 사용해서 위 블로그를 배포해 볼 차례입니다.</p>
+<p>이 작업을 통해서 <code>https://&lt;your-github-id&gt;.github.io/</code> 주소로 누구나 들어와서 볼 수 있는 블로그를 갖게 될 것입니다.</p>
+<p>When your site is ready to deploy, run the following command:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">hugo
+</code></pre></td></tr></table>
+</div>
+</div><p>A <code>public</code> folder will be generated, containing all static content and assets for your website. It can now be deployed on any web server.</p>
+<div class="admonition tip">
+            <p class="admonition-title"><i class="icon fas fa-lightbulb"></i>Tip</p>
+            <div class="admonition-content">The website can be automatically published and hosted with <a href="https://www.netlify.com/" target="_blank" rel="noopener noreffer">Netlify</a>
+ (Read more about <a href="https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/" target="_blank" rel="noopener noreffer">Automated HUGO deployments with Netlify</a>
+).
+Alternatively, you can use <a href="https://gohugo.io/hosting-and-deployment/hosting-on-aws-amplify/" target="_blank" rel="noopener noreffer">AWS Amplify</a>
+, <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/" target="_blank" rel="noopener noreffer">Github pages</a>
+, <a href="https://gohugo.io/hosting-and-deployment/hosting-on-render/" target="_blank" rel="noopener noreffer">Render</a>
+ and more&hellip;</div>
+        </div>
+<h2 id="3-configuration">3 Configuration</h2>
+<h3 id="site-configuration">3.1 Site Configuration</h3>
+<p>In addition to <a href="https://gohugo.io/overview/configuration/" target="_blank" rel="noopener noreffer">Hugo global configuration</a>
+ and <a href="#basic-configuration" rel="noopener noreffer">menu configuration</a>
+, <strong>LoveIt</strong> lets you define the following parameters in your site configuration (here is a <code>config.toml</code>, whose values are default).</p>
+<div class="admonition note">
+            <p class="admonition-title"><i class="icon fas fa-pencil-alt"></i>Note</p>
+            <div class="admonition-content">Note that some of these parameters are explained in details in other sections of this documentation.</div>
+        </div>
+<p><figure><a class="lightgallery" href="/images/theme-documentation-basics/complete-configuration-preview.png" title="Complete configuration preview" data-thumbnail="/images/theme-documentation-basics/complete-configuration-preview.png" data-sub-html="<h2>Complete configuration preview</h2><p>Complete configuration preview</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-sizes="auto"
+            data-srcset="/images/theme-documentation-basics/complete-configuration-preview.png, /images/theme-documentation-basics/complete-configuration-preview.png 1.5x, /images/theme-documentation-basics/complete-configuration-preview.png 2x"
+            data-src="/images/theme-documentation-basics/complete-configuration-preview.png"
+            alt="Complete configuration preview" />
+    </a><figcaption class="image-caption">Complete configuration preview</figcaption>
+    </figure></p>
+<h3 id="32-favicons-browserconfig-manifest">3.2 Favicons, Browserconfig, Manifest</h3>
+<p>It is recommended to put your own favicons:</p>
+<ul>
+<li>apple-touch-icon.png (180x180)</li>
+<li>favicon-32x32.png (32x32)</li>
+<li>favicon-16x16.png (16x16)</li>
+<li>mstile-150x150.png (150x150)</li>
+<li>android-chrome-192x192.png (192x192)</li>
+<li>android-chrome-512x512.png (512x512)</li>
+</ul>
+<p>into <code>/static</code>. They’re easily created via <a href="https://realfavicongenerator.net/" target="_blank" rel="noopener noreffer">https://realfavicongenerator.net/</a>
+.</p>
+<p>Customize <code>browserconfig.xml</code> and <code>site.webmanifest</code> to set theme-color and background-color.</p>
+<h3 id="33-add-logo-and-cover-for-seo">3.3 Add Logo and Cover for SEO</h3>
+<p>Add a logo image (127x40) and a cover image (800x600) in the <code>static</code> directory.</p>
+<h3 id="34-style-customization">3.4 Style Customization</h3>
+<p><strong>LoveIt</strong> theme has been built to be as configurable as possible by defining custom <code>.scss</code> style files.</p>
+<p>The directory including the custom <code>.scss</code> style files is <code>config/css</code> relative to <strong>your project path</strong>.</p>
+<p>In <code>_override.scss</code>, you can override the variables in <code>themes/LoveIt/assets/css/_variables.scss</code> to customize the style.</p>
+<p>Here is a example:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
-</span></code></pre>
-                      </td>
-                      <td class="lntd">
-                        <pre
-                          class="chroma"
-                        ><code class="language-scss" data-lang="scss"><span class="k">@import</span> <span class="sx">url(&#34;https://fonts.googleapis.com/css?family=Fira+Mono:400,700&amp;display=swap&amp;subset=latin-ext&#34;)</span><span class="p">;</span>
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-scss" data-lang="scss"><span class="k">@import</span> <span class="sx">url(&#34;https://fonts.googleapis.com/css?family=Fira+Mono:400,700&amp;display=swap&amp;subset=latin-ext&#34;)</span><span class="p">;</span>
 <span class="nv">$code-font-family</span><span class="o">:</span> <span class="n">Fira</span> <span class="n">Mono</span><span class="o">,</span> <span class="n">Source</span> <span class="n">Code</span> <span class="n">Pro</span><span class="o">,</span> <span class="n">Menlo</span><span class="o">,</span> <span class="n">Consolas</span><span class="o">,</span> <span class="n">Monaco</span><span class="o">,</span>
   <span class="no">monospace</span><span class="p">;</span>
-</code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <p>
-                In <code>_custom.scss</code>, you can add some css style code to
-                customize the style.
-              </p>
-              <h2 id="4-multilingual-and-i18n">4 Multilingual and i18n</h2>
-              <p>
-                <strong>LoveIt</strong> theme is fully compatible with Hugo
-                multilingual mode.
-              </p>
-              <p>It provides:</p>
-              <ul>
-                <li>
-                  Translation strings for default values
-                  (<strong>English</strong>, <strong>Chinese</strong> and
-                  <strong>French</strong>).
-                  <strong>Feel free to contribute!</strong>
-                </li>
-                <li>In-browser language switching</li>
-              </ul>
-              <p>
-                <figure>
-                  <a
-                    class="lightgallery"
-                    href="/images/theme-documentation-basics/language-switch.gif"
-                    title="Language Switch"
-                    data-thumbnail="/images/theme-documentation-basics/language-switch.gif"
-                    data-sub-html="<h2>Language Switch</h2><p>Language Switch</p>"
-                  >
-                    <img
-                      class="lazyload"
-                      src="/svg/loading.min.svg"
-                      data-sizes="auto"
-                      data-srcset="/images/theme-documentation-basics/language-switch.gif, /images/theme-documentation-basics/language-switch.gif 1.5x, /images/theme-documentation-basics/language-switch.gif 2x"
-                      data-src="/images/theme-documentation-basics/language-switch.gif"
-                      alt="Language Switch"
-                    />
-                  </a>
-                  <figcaption class="image-caption">Language Switch</figcaption>
-                </figure>
-              </p>
-              <h3 id="41-basic-configuration">4.1 Basic Configuration</h3>
-              <p>
-                After learning
-                <a
-                  href="https://gohugo.io/content-management/multilingual"
-                  target="_blank"
-                  rel="noopener noreffer"
-                  >how Hugo handle multilingual websites</a
-                >
-                , define your languages in your
-                <a href="#site-configuration" rel="noopener noreffer"
-                  >site configuration</a
-                >
-                .
-              </p>
-              <p>For example with English, Chinese and French website:</p>
-              <div class="highlight">
-                <div class="chroma">
-                  <table class="lntable">
-                    <tr>
-                      <td class="lntd">
-                        <pre class="chroma"><code><span class="lnt"> 1
+</code></pre></td></tr></table>
+</div>
+</div><p>In <code>_custom.scss</code>, you can add some css style code to customize the style.</p>
+<h2 id="4-multilingual-and-i18n">4 Multilingual and i18n</h2>
+<p><strong>LoveIt</strong> theme is fully compatible with Hugo multilingual mode.</p>
+<p>It provides:</p>
+<ul>
+<li>Translation strings for default values (<strong>English</strong>, <strong>Chinese</strong> and <strong>French</strong>). <strong>Feel free to contribute!</strong></li>
+<li>In-browser language switching</li>
+</ul>
+<p><figure><a class="lightgallery" href="/images/theme-documentation-basics/language-switch.gif" title="Language Switch" data-thumbnail="/images/theme-documentation-basics/language-switch.gif" data-sub-html="<h2>Language Switch</h2><p>Language Switch</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-sizes="auto"
+            data-srcset="/images/theme-documentation-basics/language-switch.gif, /images/theme-documentation-basics/language-switch.gif 1.5x, /images/theme-documentation-basics/language-switch.gif 2x"
+            data-src="/images/theme-documentation-basics/language-switch.gif"
+            alt="Language Switch" />
+    </a><figcaption class="image-caption">Language Switch</figcaption>
+    </figure></p>
+<h3 id="41-basic-configuration">4.1 Basic Configuration</h3>
+<p>After learning <a href="https://gohugo.io/content-management/multilingual" target="_blank" rel="noopener noreffer">how Hugo handle multilingual websites</a>
+, define your languages in your <a href="#site-configuration" rel="noopener noreffer">site configuration</a>
+.</p>
+<p>For example with English, Chinese and French website:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -2314,12 +1530,9 @@ Press Ctrl+C to stop
 </span><span class="lnt">85
 </span><span class="lnt">86
 </span><span class="lnt">87
-</span></code></pre>
-                      </td>
-                      <td class="lntd">
-                        <pre
-                          class="chroma"
-                        ><code class="language-toml" data-lang="toml"><span class="c"># [en, zh-cn, fr, ...] determines default content language</span>
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-toml" data-lang="toml"><span class="c"># [en, zh-cn, fr, ...] determines default content language</span>
 <span class="nx">defaultContentLanguage</span> <span class="p">=</span> <span class="s2">&#34;en&#34;</span>
 
 <span class="p">[</span><span class="nx">languages</span><span class="p">]</span>
@@ -2406,230 +1619,85 @@ Press Ctrl+C to stop
       <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;/categories/&#34;</span>
       <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
       <span class="nx">weight</span> <span class="p">=</span> <span class="mi">3</span>
-</code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <p>
-                Then, for each new page, append the language code to the file
-                name.
-              </p>
-              <p>
-                Single file <code>my-page.md</code> is split in three files:
-              </p>
-              <ul>
-                <li>in English: <code>my-page.en.md</code></li>
-                <li>in Chinese: <code>my-page.zh-cn.md</code></li>
-                <li>in French: <code>my-page.fr.md</code></li>
-              </ul>
-              <div class="admonition note">
-                <p class="admonition-title">
-                  <i class="icon fas fa-pencil-alt"></i>Note
-                </p>
-                <div class="admonition-content">
-                  Be aware that only translated pages are displayed in menu.
-                  It’s not replaced with default language content.
-                </div>
-              </div>
-              <div class="admonition tip">
-                <p class="admonition-title">
-                  <i class="icon fas fa-lightbulb"></i>Tip
-                </p>
-                <div class="admonition-content">
-                  Use
-                  <a
-                    href="https://gohugo.io/content-management/multilingual/#translate-your-content"
-                    target="_blank"
-                    rel="noopener noreffer"
-                    >Front Matter parameter</a
-                  >
-                  to translate urls too.
-                </div>
-              </div>
-              <h3 id="42-overwrite-translation-strings">
-                4.2 Overwrite Translation Strings
-              </h3>
-              <p>
-                Translations strings are used for common default values used in
-                the theme. Translations are available in
-                <strong>English</strong>, <strong>Chinese</strong> and
-                <strong>French</strong>, but you may use another language or
-                want to override default values.
-              </p>
-              <p>
-                To override these values, create a new file in your local i18n
-                folder <code>i18n/&lt;languageCode&gt;.toml</code> and inspire
-                yourself from <code>themes/LoveIt/i18n/en.toml</code>.
-              </p>
-              <p>
-                By the way, as these translations could be used by other people,
-                please take the time to propose a translation by
-                <a
-                  href="https://github.com/dillonzq/LoveIt/pulls"
-                  target="_blank"
-                  rel="noopener noreffer"
-                  >making a PR</a
-                >
-                to the theme!
-              </p>
-            </div>
-            <div class="post-footer" id="post-footer">
-              <div class="post-info">
-                <div class="post-info-line">
-                  <div class="post-info-mod">
-                    <span>The article was updated on 2020-03-13</span>
-                  </div>
-                  <div class="post-info-license">
-                    <span>Published under the MIT license</span>
-                  </div>
-                </div>
-                <div class="post-info-line">
-                  <div class="post-info-md">
-                    <span>
-                      <a
-                        class="link-to-markdown"
-                        href="/hugo_blog/index.md"
-                        target="_blank"
-                        >Read Markdown</a
-                      >
-                    </span>
-                  </div>
-                  <div class="post-info-share">
-                    <span
-                      ><a
-                        href="javascript:void(0);"
-                        title="Share on Twitter"
-                        data-sharer="twitter"
-                        data-url="http://example.org/hugo_blog/"
-                        data-title="How to make Hugo Blog like this?? (Hugo &#43; GitHub pages)"
-                        data-hashtags="Hugo,Blog"
-                        ><i class="fab fa-twitter fa-fw"></i></a
-                      ><a
-                        href="javascript:void(0);"
-                        title="Share on Facebook"
-                        data-sharer="facebook"
-                        data-url="http://example.org/hugo_blog/"
-                        data-hashtag="Hugo"
-                        ><i class="fab fa-facebook-square fa-fw"></i></a
-                      ><a
-                        href="javascript:void(0);"
-                        title="Share on Linkedin"
-                        data-sharer="linkedin"
-                        data-url="http://example.org/hugo_blog/"
-                        ><i class="fab fa-linkedin fa-fw"></i></a
-                      ><a
-                        href="javascript:void(0);"
-                        title="Share on WhatsApp"
-                        data-sharer="whatsapp"
-                        data-url="http://example.org/hugo_blog/"
-                        data-title="How to make Hugo Blog like this?? (Hugo &#43; GitHub pages)"
-                        data-web
-                        ><i class="fab fa-whatsapp fa-fw"></i></a
-                      ><a
-                        href="javascript:void(0);"
-                        title="Share on Pinterest"
-                        data-sharer="pinterest"
-                        data-url="http://example.org/hugo_blog/"
-                        data-description="Let&#39;s make a FULL-FREE blog like this"
-                        ><i class="fab fa-pinterest fa-fw"></i></a
-                      ><a
-                        href="javascript:void(0);"
-                        title="Share on Hacker News"
-                        data-sharer="hackernews"
-                        data-url="http://example.org/hugo_blog/"
-                        data-title="How to make Hugo Blog like this?? (Hugo &#43; GitHub pages)"
-                        ><i class="fab fa-hacker-news fa-fw"></i></a
-                    ></span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="post-info-more">
-                <section>
-                  <span>
-                    <a href="/tags/hugo">
-                      <i class="fas fa-tag fa-fw"></i>Hugo
-                    </a> </span
-                  >&nbsp;<span>
-                    <a href="/tags/blog">
-                      <i class="fas fa-tag fa-fw"></i>Blog
-                    </a> </span
-                  >&nbsp;
-                </section>
-                <section>
-                  <span
-                    ><a href="javascript:window.history.back();">Back</a></span
-                  >&nbsp;|&nbsp;<span><a href="/">Home</a></span>
-                </section>
-              </div>
-
-              <div class="post-nav"></div>
-            </div>
-            <div class="comment"></div>
-          </article>
+</code></pre></td></tr></table>
+</div>
+</div><p>Then, for each new page, append the language code to the file name.</p>
+<p>Single file <code>my-page.md</code> is split in three files:</p>
+<ul>
+<li>in English: <code>my-page.en.md</code></li>
+<li>in Chinese: <code>my-page.zh-cn.md</code></li>
+<li>in French: <code>my-page.fr.md</code></li>
+</ul>
+<div class="admonition note">
+            <p class="admonition-title"><i class="icon fas fa-pencil-alt"></i>Note</p>
+            <div class="admonition-content">Be aware that only translated pages are displayed in menu. It’s not replaced with default language content.</div>
         </div>
-      </main>
-      <footer class="footer">
-        <div class="copyright">
-          <div class="copyright-line">
-            Powered by
-            <a
-              href="https://gohugo.io/"
-              target="_blank"
-              rel="external nofollow noopener noreffer"
-              >Hugo</a
-            >
-            | Theme -
-            <a
-              href="https://github.com/dillonzq/LoveIt"
-              target="_blank"
-              rel="external nofollow noopener noreffer"
-              >LoveIt<i class="far fa-heart fa-fw"></i
-            ></a>
-          </div>
-
-          <div class="copyright-line">
-            <i class="far fa-copyright fa-fw"></i
-            ><span itemprop="copyrightYear">2019 - 2020</span
-            ><span class="author" itemprop="copyrightHolder"
-              >&nbsp;<a href="/" target="_blank">xxxx</a></span
-            >&nbsp;|&nbsp;<span class="license"
-              ><a
-                rel="license external nofollow noopener noreffer"
-                href="https://creativecommons.org/licenses/by-nc/4.0/"
-                target="_blank"
-                >CC BY-NC 4.0</a
-              ></span
-            >
-          </div>
+<div class="admonition tip">
+            <p class="admonition-title"><i class="icon fas fa-lightbulb"></i>Tip</p>
+            <div class="admonition-content">Use <a href="https://gohugo.io/content-management/multilingual/#translate-your-content" target="_blank" rel="noopener noreffer">Front Matter parameter</a>
+ to translate urls too.</div>
         </div>
-      </footer>
+<h3 id="42-overwrite-translation-strings">4.2 Overwrite Translation Strings</h3>
+<p>Translations strings are used for common default values used in the theme. Translations are available in <strong>English</strong>, <strong>Chinese</strong> and <strong>French</strong>, but you may use another language or want to override default values.</p>
+<p>To override these values, create a new file in your local i18n folder <code>i18n/&lt;languageCode&gt;.toml</code> and inspire yourself from <code>themes/LoveIt/i18n/en.toml</code>.</p>
+<p>By the way, as these translations could be used by other people, please take the time to propose a translation by <a href="https://github.com/dillonzq/LoveIt/pulls" target="_blank" rel="noopener noreffer">making a PR</a>
+ to the theme!</p></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>The article was updated on 2020-03-13</span>
+            </div>
+            <div class="post-info-license"><span>Published under the MIT license</span></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/hugo_blog/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://example.org/hugo_blog/" data-title="How to make Hugo Blog like this?? (Hugo &#43; GitHub pages)" data-hashtags="Hugo,Blog"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://example.org/hugo_blog/" data-hashtag="Hugo"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="http://example.org/hugo_blog/"><i class="fab fa-linkedin fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="http://example.org/hugo_blog/" data-title="How to make Hugo Blog like this?? (Hugo &#43; GitHub pages)" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Pinterest" data-sharer="pinterest" data-url="http://example.org/hugo_blog/" data-description="Let&#39;s make a FULL-FREE blog like this"><i class="fab fa-pinterest fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://example.org/hugo_blog/" data-title="How to make Hugo Blog like this?? (Hugo &#43; GitHub pages)"><i class="fab fa-hacker-news fa-fw"></i></a></span>
+            </div>
+        </div>
     </div>
-    <a href="#" class="dynamic-to-top animated faster" id="dynamic-to-top">
-      <span>&nbsp;</span>
-    </a>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        lightGallery(document.getElementById("content"), {
-          selector: ".lightgallery",
-          speed: 400,
-          hideBarsDelay: 2000,
-          thumbnail: true,
-          exThumbImage: "data-thumbnail",
-          thumbWidth: 80,
-          thumbContHeight: 80,
+
+    <div class="post-info-more">
+        <section><span>
+                        <a href="/tags/hugo">
+                            <i class="fas fa-tag fa-fw"></i>Hugo
+                        </a>
+                    </span>&nbsp;<span>
+                        <a href="/tags/blog">
+                            <i class="fas fa-tag fa-fw"></i>Blog
+                        </a>
+                    </span>&nbsp;</section>
+        <section>
+            <span><a href="javascript:window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"></div>
+</div>
+<div class="comment"></div>
+    </article></div>
+            </main><footer class="footer">
+    <div class="copyright"><div class="copyright-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreffer">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="external nofollow noopener noreffer">LoveIt<i class="far fa-heart fa-fw"></i></a>
+        </div>
+
+        <div class="copyright-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xxxx</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+    </div>
+</footer>
+</div><a href="#" class="dynamic-to-top animated faster" id="dynamic-to-top">
+            <span>&nbsp;</span>
+        </a><script>
+        document.addEventListener('DOMContentLoaded', function () {
+            lightGallery(document.getElementById('content'), {
+                selector: '.lightgallery',
+                speed: 400,
+                hideBarsDelay: 2000,
+                thumbnail: true,
+                exThumbImage: 'data-thumbnail',
+                thumbWidth: 80,
+                thumbContHeight: 80,
+            });
         });
-      });
-    </script>
-    <link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css" />
-    <script src="/lib/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
-    <script src="/lib/sharer/sharer.min.js"></script>
-    <script src="/lib/lazysizes/lazysizes.min.js"></script>
-    <script src="/lib/lightgallery/lightgallery.min.js"></script>
-    <script src="/lib/lightgallery/lg-thumbnail.min.js"></script>
-    <script src="/lib/lightgallery/lg-zoom.min.js"></script>
-    <script src="/js/theme.min.js"></script>
-  </body>
+    </script><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script src="/lib/smooth-scroll/smooth-scroll.polyfills.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/lg-zoom.min.js"></script><script src="/js/theme.min.js"></script></body>
 </html>

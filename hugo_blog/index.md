@@ -1,5 +1,6 @@
 # How to make Hugo Blog like this?? (Hugo + GitHub pages)
 
+
 ## Hugo 블로그 구축기
 
 Hugo 설치, Open-Source theme을 사용해서 블로그 구축, GitHub Page로 배포하는 과정을 다룹니다.
@@ -25,7 +26,7 @@ Hugo 설치, Open-Source theme을 사용해서 블로그 구축, GitHub Page로 
 전문 개발자 분들께서 보시기에 너무 쉬울 수도 있어요 :smile::smile:
 {{< /admonition >}}
 
-## 1. Introduction to Hugo
+## 1. Hugo의 소개와 설치 및 기본 사용법
 
 > Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again.
 
@@ -129,7 +130,7 @@ cd <your-site-name>
 
 저는 [**LoveIt**](https://github.com/dillonzq/LoveIt) 라는 theme을 선택하였습니다.
 
-theme을 사용하는 3가지 방법이 있습니다.
+theme을 사용하기 위해서는
 
 1. 해당 theme의 [최신 배포 버전을 다운 :(far fa-file-archive): .zip file](https://github.com/dillonzq/LoveIt/releases) 받아 프로젝트의 `themes` 폴더에 넣기
 
@@ -740,7 +741,7 @@ $global-font-size: 0.8rem;
 
 위 작업을 마친 후 `hugo serve`를 실행시켜서 글자 크기가 더 작아진 것을 확인해보세요.
 
-## 4 Build your Website
+## 4 Build the Website
 
 지금까지의 과정을 잘 따라왔다면, 다음과 같이
 
@@ -947,3 +948,4 @@ Translations strings are used for common default values used in the theme. Trans
 To override these values, create a new file in your local i18n folder `i18n/<languageCode>.toml` and inspire yourself from `themes/LoveIt/i18n/en.toml`.
 
 By the way, as these translations could be used by other people, please take the time to propose a translation by [making a PR](https://github.com/dillonzq/LoveIt/pulls) to the theme!
+
