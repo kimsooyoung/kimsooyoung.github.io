@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Swimming Kim&#39;s Blog</title>
+    <link>http://example.org/tags/hugo/</link>
+    <description>Recent content in Hugo on Swimming Kim&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 12 Mar 2020 18:18:59 +0900</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to make Hugo Blog like this?? (Hugo &#43; GitHub pages)</title>
+      <link>http://example.org/hugo_blog/</link>
+      <pubDate>Thu, 12 Mar 2020 18:18:59 +0900</pubDate>
+      
+      <guid>http://example.org/hugo_blog/</guid>
+      <description>&lt;h2 id=&#34;hugo-블로그-구축기&#34;&gt;Hugo 블로그 구축기&lt;/h2&gt;
+&lt;p&gt;Hugo 설치, Open-Source theme을 사용해서 블로그 구축, GitHub Page로 배포하는 과정을 다룹니다.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
