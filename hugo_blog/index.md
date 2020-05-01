@@ -23,7 +23,7 @@ Hugo 설치, Open-Source theme을 사용해서 블로그 구축, GitHub Page로 
 
 {{< admonition >}}
 최대한 많은 분들이 읽으실 수 있도록 단어 선택 및 자세한 설명을 하려 노력하였습니다.
-전문 개발자 분들께서 보시기에 너무 쉬울 수도 있어요 :smile::smile:
+전문 개발자 분들께서 보시기에 너무 쉬울 수도 있습니다. :smile::smile:
 {{< /admonition >}}
 
 ## 1. Introduction to Hugo
@@ -741,7 +741,7 @@ $global-font-size: 0.8rem;
 
 위 작업을 마친 후 `hugo serve`를 실행시켜서 글자 크기가 더 작아진 것을 확인해보세요.
 
-## 4 Build the Website
+## 4 Build and Deploy
 
 지금까지의 과정을 잘 따라왔다면, 다음과 같이
 
@@ -752,200 +752,100 @@ $global-font-size: 0.8rem;
 
 위의 요소들을 지닌 멋진 `Hugo` 블로그를 갖게 되셨을 것입니다.
 
-그럼 이제는 `Github Pages`를 사용해서 위 블로그를 배포해 볼 차례입니다.
+그럼 이제 위 블로그를 빌드한 후, 누구나 접속할 수 있도록 배포해 보겠습니다.
 
-이 작업을 통해서 `https://<your-github-id>.github.io/` 주소로 누구나 들어와서 볼 수 있는 블로그를 갖게 될 것입니다.
+해당 작업을 통해서 `https://<your-github-id>.github.io/` 주소로 누구나 들어와서 볼 수 있는 블로그를 갖게 됩니다.
 
-When your site is ready to deploy, run the following command:
+---
+
+### 4.1 Create Repo for GitHub Pages
+
+본디, 홈페이지를 만들기 위해서는 `www.<something>.com`과 같은 도메인을 구매하고, 만들어 놓은 홈페이지 내용을 해당 도메인과 연동시키는 작업이 필요합니다.
+
+[`GitHub Pages`](https://pages.github.com/)는 별도의 비용 없이 Github에서 제공하는 도메인이라고 생각하시면 됩니다. 다만, 한 계정당 도메인 주소 하나만 가능하며, 이름을 마음대로 설정할 수는 없습니다.
+
+<img width="741" alt="스크린샷 2020-05-01 오전 12 56 49" src="https://user-images.githubusercontent.com/12381733/80783348-6dc19a00-8bb4-11ea-8d97-ab0c9259bed4.png">
+
+위와 같이 `<본인 Github 계정>.github.io`로 새로운 Repository를 만듭니다. **반드시 본인 계정 이름과 동일하게 하세요!!**
+
+더불어, Website Project 자체를 관리할 Repository도 만들어 둡니다.
+
+<img width="1019" alt="스크린샷 2020-05-01 오후 2 07 52" src="https://user-images.githubusercontent.com/12381733/80783593-37384f00-8bb5-11ea-9f31-8e2dfbfbb1c6.png">
+
+- 상단 setting으로 들어가서 스크롤을 내리면, 생성된 `Github Page` 주소를 볼 수 있습니다. 다음 단계에서, 지금껏 작성한 내용을 빌드한 뒤 이 Repository에 push를 할 것입니다.
+
+<img width="758" alt="스크린샷 2020-05-01 오후 2 08 05" src="https://user-images.githubusercontent.com/12381733/80783599-3a333f80-8bb5-11ea-9dad-450b73ddbb43.png">
+
+### 4.2 Build the Website
+
+아주 간단한 설명이지만 Build란 이런 의미를 갖습니다.
+
+`GitHub Page`는 정적인 파일들(css, js, html)을 받아 홈페이지를 생성해 줍니다.
+
+Build를 한다는 것은, 블로그 방문자 입장에서는 전혀 필요없는 부분을 우리가 작업중인 프로젝트에서 제외시키고, 띄어쓰기, 줄 바꿈과 같은 부분까지도 삭제하는 등 최적화해서 딱 필요한 부분만 `GitHub Page`에게 전달해주는 것입니다.
+
+빌드하는 과정은 매우 간단합니다.
+
+Hugo site가 있는 위치에서 다음 커맨드를 입력합니다.
 
 ```bash
-hugo
+hugo -t <사용한 Theme 이름>
 ```
 
-A `public` folder will be generated, containing all static content and assets for your website. It can now be deployed on any web server.
+프로젝트 최상단에 `public`이라는 이름의 폴더가 만들어진 것이 보입니다. 이 폴더 안에는 지금껏 만든 모든 내용들이 정적 파일로 빌드되어 있습니다.
 
-{{< admonition tip >}}
-The website can be automatically published and hosted with [Netlify](https://www.netlify.com/) (Read more about [Automated HUGO deployments with Netlify](https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/)).
-Alternatively, you can use [AWS Amplify](https://gohugo.io/hosting-and-deployment/hosting-on-aws-amplify/), [Github pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/), [Render](https://gohugo.io/hosting-and-deployment/hosting-on-render/) and more...
-{{< /admonition >}}
-
-## 3 Configuration
-
-### 3.1 Site Configuration {#site-configuration}
-
-In addition to [Hugo global configuration](https://gohugo.io/overview/configuration/) and [menu configuration](#basic-configuration), **LoveIt** lets you define the following parameters in your site configuration (here is a `config.toml`, whose values are default).
+이를 방금 만든 `Github Page` Repository에 push 해보겠습니다.
 
 {{< admonition >}}
-Note that some of these parameters are explained in details in other sections of this documentation.
-{{< /admonition >}}
+Theme을 clone할 때와 마찬가지로, git 폴더 안에 또다른 git 폴더가 포함되는 경우, Submodule을 통해 관리해야 합니다.
 
-![Complete configuration preview](/images/theme-documentation-basics/complete-configuration-preview.png "Complete configuration preview")
-
-### 3.2 Favicons, Browserconfig, Manifest
-
-It is recommended to put your own favicons:
-
-- apple-touch-icon.png (180x180)
-- favicon-32x32.png (32x32)
-- favicon-16x16.png (16x16)
-- mstile-150x150.png (150x150)
-- android-chrome-192x192.png (192x192)
-- android-chrome-512x512.png (512x512)
-
-into `/static`. They’re easily created via [https://realfavicongenerator.net/](https://realfavicongenerator.net/).
-
-Customize `browserconfig.xml` and `site.webmanifest` to set theme-color and background-color.
-
-### 3.3 Add Logo and Cover for SEO
-
-Add a logo image (127x40) and a cover image (800x600) in the `static` directory.
-
-### 3.4 Style Customization
-
-**LoveIt** theme has been built to be as configurable as possible by defining custom `.scss` style files.
-
-The directory including the custom `.scss` style files is `config/css` relative to **your project path**.
-
-In `_override.scss`, you can override the variables in `themes/LoveIt/assets/css/_variables.scss` to customize the style.
-
-Here is a example:
-
-```scss
-@import url("https://fonts.googleapis.com/css?family=Fira+Mono:400,700&display=swap&subset=latin-ext");
-$code-font-family: Fira Mono, Source Code Pro, Menlo, Consolas, Monaco,
-  monospace;
+```bash
+$ git submodule add -b master <Github Page repository url> public
 ```
 
-In `_custom.scss`, you can add some css style code to customize the style.
+{{< /admonition >}}
 
-## 4 Multilingual and i18n
+`public` 폴더 내용을 push 합니다.
 
-**LoveIt** theme is fully compatible with Hugo multilingual mode.
-
-It provides:
-
-- Translation strings for default values (**English**, **Chinese** and **French**). **Feel free to contribute!**
-- In-browser language switching
-
-![Language Switch](/images/theme-documentation-basics/language-switch.gif "Language Switch")
-
-### 4.1 Basic Configuration
-
-After learning [how Hugo handle multilingual websites](https://gohugo.io/content-management/multilingual), define your languages in your [site configuration](#site-configuration).
-
-For example with English, Chinese and French website:
-
-```toml
-# [en, zh-cn, fr, ...] determines default content language
-defaultContentLanguage = "en"
-
-[languages]
-  [languages.en]
-    weight = 1
-    title = "My New Hugo Site"
-    languageCode = "en"
-    languageName = "English"
-    [[languages.en.menu.main]]
-      identifier = "posts"
-      pre = ""
-      name = "Posts"
-      url = "/posts/"
-      title = ""
-      weight = 1
-    [[languages.en.menu.main]]
-      identifier = "tags"
-      pre = ""
-      name = "Tags"
-      url = "/tags/"
-      title = ""
-      weight = 2
-    [[languages.en.menu.main]]
-      identifier = "categories"
-      pre = ""
-      name = "Categories"
-      url = "/categories/"
-      title = ""
-      weight = 3
-
-  [languages.zh-cn]
-    weight = 2
-    title = "我的全新 Hugo 网站"
-    # language code, CN only here
-    languageCode = "zh-CN"
-    languageName = "简体中文"
-    # whether to include Chinese/Japanese/Korean
-    hasCJKLanguage = true
-    [[languages.zh-cn.menu.main]]
-      identifier = "posts"
-      pre = ""
-      name = "文章"
-      url = "/posts/"
-      title = ""
-      weight = 1
-    [[languages.zh-cn.menu.main]]
-      identifier = "tags"
-      pre = ""
-      name = "标签"
-      url = "/tags/"
-      title = ""
-      weight = 2
-    [[languages.zh-cn.menu.main]]
-      identifier = "categories"
-      pre = ""
-      name = "分类"
-      url = "/categories/"
-      title = ""
-      weight = 3
-
-  [languages.fr]
-    weight = 3
-    title = "Mon nouveau site Hugo"
-    languageCode = "fr"
-    languageName = "Français"
-    [[languages.fr.menu.main]]
-      identifier = "posts"
-      pre = ""
-      name = "Postes"
-      url = "/posts/"
-      title = ""
-      weight = 1
-    [[languages.fr.menu.main]]
-      identifier = "tags"
-      pre = ""
-      name = "Balises"
-      url = "/tags/"
-      title = ""
-      weight = 2
-    [[languages.fr.menu.main]]
-      identifier = "categories"
-      name = "Catégories"
-      pre = ""
-      url = "/categories/"
-      title = ""
-      weight = 3
+```bash
+cd public
+git add .
+git commit -m "First Commit"
+git push origin master
 ```
 
-Then, for each new page, append the language code to the file name.
+다음으로, Hugo 프로젝트 폴더를 push합니다.
 
-Single file `my-page.md` is split in three files:
+```bash
+cd ../
+git add .
+git commit -m "First Buil Succeed"
+git push origin master
+```
 
-- in English: `my-page.en.md`
-- in Chinese: `my-page.zh-cn.md`
-- in French: `my-page.fr.md`
+잠시 기다린 뒤, 방금 확인하였던 `username.github.io`로 접속해보면...
 
-{{< admonition >}}
-Be aware that only translated pages are displayed in menu. It’s not replaced with default language content.
-{{< /admonition >}}
+<img width="1619" alt="스크린샷 2020-05-02 오전 2 04 45" src="https://user-images.githubusercontent.com/12381733/80824402-5c5ea900-8c19-11ea-987e-c609815c7681.png">
 
-{{< admonition tip >}}
-Use [Front Matter parameter](https://gohugo.io/content-management/multilingual/#translate-your-content) to translate urls too.
-{{< /admonition >}}
+웹사이트가 배포되어 있는 것이 보입니다!! :thumbsup::thumbsup:
 
-### 4.2 Overwrite Translation Strings
+- 지금 상황에서 더 풍부한 포스트들을 추가할 수도 있고, 댓글 기능, 좋아요 기능 등 추가적인 커스터마이징을 할 수도 있습니다.
 
-Translations strings are used for common default values used in the theme. Translations are available in **English**, **Chinese** and **French**, but you may use another language or want to override default values.
+- 더불어 여기서 사용된 `LoveIt`은 언어별 컨텐츠 관리, 차트 그리기, 지도 표시 등 계속해서 기능의 발전을 거듭하고 있습니다.
 
-To override these values, create a new file in your local i18n folder `i18n/<languageCode>.toml` and inspire yourself from `themes/LoveIt/i18n/en.toml`.
+---
 
-By the way, as these translations could be used by other people, please take the time to propose a translation by [making a PR](https://github.com/dillonzq/LoveIt/pulls) to the theme!
+제가 준비한 컨텐츠는 여기까지입니다.
+첫 글이기 때문에 미흡한 점이 많아 피드백은 적극 수용하겠습니다.
+
+추가적으로, 튜토리얼 중 문제가 생겼다면 댓글로 질문해주세요!! :muscle::muscle:
+
+---
+
+## Reference
+
+- [Hugo로 github.io 블로그 만들기](https://github.com/Integerous/Integerous.github.io)
+- [블로그 구축기 1 (Hugo + github.io)](https://ialy1595.github.io/post/blog-construct-1/)
+- [Git 도구 - 서브모듈](https://git-scm.com/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EC%84%9C%EB%B8%8C%EB%AA%A8%EB%93%88)
+- [LoveIt Document](https://hugoloveit.com/)
 

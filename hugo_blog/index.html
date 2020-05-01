@@ -36,7 +36,7 @@
                 "url": "http:\/\/example.org\/cover.png",
                 "width":  800 ,
                 "height":  600 
-            },"genre": "posts","keywords": "Hugo, Blog","wordcount":  3832 ,
+            },"genre": "posts","keywords": "Hugo, Blog","wordcount":  3373 ,
         "url": "http:\/\/example.org\/hugo_blog\/","datePublished": "2020-03-12T18:18:59\x2b09:00","dateModified": "2020-03-13T21:29:01\x2b08:00","publisher": {
                 "@type": "Organization",
                 "name": "xxxx",
@@ -95,8 +95,8 @@
                                 </a>
                             </span></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2020-03-12>2020-03-12</time>&nbsp;
-                <i class="fas fa-pencil-alt fa-fw"></i>about 3832 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>18 min&nbsp;</div>
+                <i class="fas fa-pencil-alt fa-fw"></i>about 3373 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>16 min&nbsp;</div>
         </div><div class="toc" id="toc-auto">
                 <h2 class="toc-title">Contents</h2>
                 <div class="toc-content always-active" id="toc-content-auto"></div>
@@ -131,21 +131,13 @@
         <li><a href="#32-custumize-home-page">3.2 Custumize Home Page</a></li>
       </ul>
     </li>
-    <li><a href="#4-build-the-website">4 Build the Website</a></li>
-    <li><a href="#3-configuration">3 Configuration</a>
+    <li><a href="#4-build-and-deploy">4 Build and Deploy</a>
       <ul>
-        <li><a href="#site-configuration">3.1 Site Configuration</a></li>
-        <li><a href="#32-favicons-browserconfig-manifest">3.2 Favicons, Browserconfig, Manifest</a></li>
-        <li><a href="#33-add-logo-and-cover-for-seo">3.3 Add Logo and Cover for SEO</a></li>
-        <li><a href="#34-style-customization">3.4 Style Customization</a></li>
+        <li><a href="#41-create-repo-for-github-pages">4.1 Create Repo for GitHub Pages</a></li>
+        <li><a href="#42-build-the-website">4.2 Build the Website</a></li>
       </ul>
     </li>
-    <li><a href="#4-multilingual-and-i18n">4 Multilingual and i18n</a>
-      <ul>
-        <li><a href="#41-basic-configuration">4.1 Basic Configuration</a></li>
-        <li><a href="#42-overwrite-translation-strings">4.2 Overwrite Translation Strings</a></li>
-      </ul>
-    </li>
+    <li><a href="#reference">Reference</a></li>
   </ul>
 </nav></div>
                 </details>
@@ -165,7 +157,7 @@
 <div class="admonition note">
             <p class="admonition-title"><i class="icon fas fa-pencil-alt"></i>Note</p>
             <div class="admonition-content">최대한 많은 분들이 읽으실 수 있도록 단어 선택 및 자세한 설명을 하려 노력하였습니다.
-전문 개발자 분들께서 보시기에 너무 쉬울 수도 있어요 😄😄</div>
+전문 개발자 분들께서 보시기에 너무 쉬울 수도 있습니다. 😄😄</div>
         </div>
 <h2 id="1-introduction-to-hugo">1. Introduction to Hugo</h2>
 <blockquote>
@@ -1337,7 +1329,7 @@ Press Ctrl+C to stop
 </code></pre></td></tr></table>
 </div>
 </div><p>위 작업을 마친 후 <code>hugo serve</code>를 실행시켜서 글자 크기가 더 작아진 것을 확인해보세요.</p>
-<h2 id="4-build-the-website">4 Build the Website</h2>
+<h2 id="4-build-and-deploy">4 Build and Deploy</h2>
 <p>지금까지의 과정을 잘 따라왔다면, 다음과 같이</p>
 <img width="1642" alt="before_deploy" src="https://user-images.githubusercontent.com/12381733/77080212-613a1580-6a3c-11ea-871b-973c0bc16348.png">
 <ul>
@@ -1345,303 +1337,107 @@ Press Ctrl+C to stop
 <li>1개 이상의 포스트와 description</li>
 </ul>
 <p>위의 요소들을 지닌 멋진 <code>Hugo</code> 블로그를 갖게 되셨을 것입니다.</p>
-<p>그럼 이제는 <code>Github Pages</code>를 사용해서 위 블로그를 배포해 볼 차례입니다.</p>
-<p>이 작업을 통해서 <code>https://&lt;your-github-id&gt;.github.io/</code> 주소로 누구나 들어와서 볼 수 있는 블로그를 갖게 될 것입니다.</p>
-<p>When your site is ready to deploy, run the following command:</p>
+<p>그럼 이제 위 블로그를 빌드한 후, 누구나 접속할 수 있도록 배포해 보겠습니다.</p>
+<p>해당 작업을 통해서 <code>https://&lt;your-github-id&gt;.github.io/</code> 주소로 누구나 들어와서 볼 수 있는 블로그를 갖게 됩니다.</p>
+<hr>
+<h3 id="41-create-repo-for-github-pages">4.1 Create Repo for GitHub Pages</h3>
+<p>본디, 홈페이지를 만들기 위해서는 <code>www.&lt;something&gt;.com</code>과 같은 도메인을 구매하고, 만들어 놓은 홈페이지 내용을 해당 도메인과 연동시키는 작업이 필요합니다.</p>
+<p><a href="https://pages.github.com/" target="_blank" rel="noopener noreffer"><code>GitHub Pages</code></a>
+는 별도의 비용 없이 Github에서 제공하는 도메인이라고 생각하시면 됩니다. 다만, 한 계정당 도메인 주소 하나만 가능하며, 이름을 마음대로 설정할 수는 없습니다.</p>
+<img width="741" alt="스크린샷 2020-05-01 오전 12 56 49" src="https://user-images.githubusercontent.com/12381733/80783348-6dc19a00-8bb4-11ea-8d97-ab0c9259bed4.png">
+<p>위와 같이 <code>&lt;본인 Github 계정&gt;.github.io</code>로 새로운 Repository를 만듭니다. <strong>반드시 본인 계정 이름과 동일하게 하세요!!</strong></p>
+<p>더불어, Website Project 자체를 관리할 Repository도 만들어 둡니다.</p>
+<img width="1019" alt="스크린샷 2020-05-01 오후 2 07 52" src="https://user-images.githubusercontent.com/12381733/80783593-37384f00-8bb5-11ea-9f31-8e2dfbfbb1c6.png">
+<ul>
+<li>상단 setting으로 들어가서 스크롤을 내리면, 생성된 <code>Github Page</code> 주소를 볼 수 있습니다. 다음 단계에서, 지금껏 작성한 내용을 빌드한 뒤 이 Repository에 push를 할 것입니다.</li>
+</ul>
+<img width="758" alt="스크린샷 2020-05-01 오후 2 08 05" src="https://user-images.githubusercontent.com/12381733/80783599-3a333f80-8bb5-11ea-9dad-450b73ddbb43.png">
+<h3 id="42-build-the-website">4.2 Build the Website</h3>
+<p>아주 간단한 설명이지만 Build란 이런 의미를 갖습니다.</p>
+<p><code>GitHub Page</code>는 정적인 파일들(css, js, html)을 받아 홈페이지를 생성해 줍니다.</p>
+<p>Build를 한다는 것은, 블로그 방문자 입장에서는 전혀 필요없는 부분을 우리가 작업중인 프로젝트에서 제외시키고, 띄어쓰기, 줄 바꿈과 같은 부분까지도 삭제하는 등 최적화해서 딱 필요한 부분만 <code>GitHub Page</code>에게 전달해주는 것입니다.</p>
+<p>빌드하는 과정은 매우 간단합니다.</p>
+<p>Hugo site가 있는 위치에서 다음 커맨드를 입력합니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">hugo
+<pre class="chroma"><code class="language-bash" data-lang="bash">hugo -t &lt;사용한 Theme 이름&gt;
 </code></pre></td></tr></table>
 </div>
-</div><p>A <code>public</code> folder will be generated, containing all static content and assets for your website. It can now be deployed on any web server.</p>
-<div class="admonition tip">
-            <p class="admonition-title"><i class="icon fas fa-lightbulb"></i>Tip</p>
-            <div class="admonition-content">The website can be automatically published and hosted with <a href="https://www.netlify.com/" target="_blank" rel="noopener noreffer">Netlify</a>
- (Read more about <a href="https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/" target="_blank" rel="noopener noreffer">Automated HUGO deployments with Netlify</a>
-).
-Alternatively, you can use <a href="https://gohugo.io/hosting-and-deployment/hosting-on-aws-amplify/" target="_blank" rel="noopener noreffer">AWS Amplify</a>
-, <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/" target="_blank" rel="noopener noreffer">Github pages</a>
-, <a href="https://gohugo.io/hosting-and-deployment/hosting-on-render/" target="_blank" rel="noopener noreffer">Render</a>
- and more&hellip;</div>
-        </div>
-<h2 id="3-configuration">3 Configuration</h2>
-<h3 id="site-configuration">3.1 Site Configuration</h3>
-<p>In addition to <a href="https://gohugo.io/overview/configuration/" target="_blank" rel="noopener noreffer">Hugo global configuration</a>
- and <a href="#basic-configuration" rel="noopener noreffer">menu configuration</a>
-, <strong>LoveIt</strong> lets you define the following parameters in your site configuration (here is a <code>config.toml</code>, whose values are default).</p>
+</div><p>프로젝트 최상단에 <code>public</code>이라는 이름의 폴더가 만들어진 것이 보입니다. 이 폴더 안에는 지금껏 만든 모든 내용들이 정적 파일로 빌드되어 있습니다.</p>
+<p>이를 방금 만든 <code>Github Page</code> Repository에 push 해보겠습니다.</p>
 <div class="admonition note">
             <p class="admonition-title"><i class="icon fas fa-pencil-alt"></i>Note</p>
-            <div class="admonition-content">Note that some of these parameters are explained in details in other sections of this documentation.</div>
+            <div class="admonition-content"><p>Theme을 clone할 때와 마찬가지로, git 폴더 안에 또다른 git 폴더가 포함되는 경우, Submodule을 통해 관리해야 합니다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ git submodule add -b master &lt;Github Page repository url&gt; public
+</code></pre></td></tr></table>
+</div>
+</div></div>
         </div>
-<p><figure><a class="lightgallery" href="/images/theme-documentation-basics/complete-configuration-preview.png" title="Complete configuration preview" data-thumbnail="/images/theme-documentation-basics/complete-configuration-preview.png" data-sub-html="<h2>Complete configuration preview</h2><p>Complete configuration preview</p>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-sizes="auto"
-            data-srcset="/images/theme-documentation-basics/complete-configuration-preview.png, /images/theme-documentation-basics/complete-configuration-preview.png 1.5x, /images/theme-documentation-basics/complete-configuration-preview.png 2x"
-            data-src="/images/theme-documentation-basics/complete-configuration-preview.png"
-            alt="Complete configuration preview" />
-    </a><figcaption class="image-caption">Complete configuration preview</figcaption>
-    </figure></p>
-<h3 id="32-favicons-browserconfig-manifest">3.2 Favicons, Browserconfig, Manifest</h3>
-<p>It is recommended to put your own favicons:</p>
-<ul>
-<li>apple-touch-icon.png (180x180)</li>
-<li>favicon-32x32.png (32x32)</li>
-<li>favicon-16x16.png (16x16)</li>
-<li>mstile-150x150.png (150x150)</li>
-<li>android-chrome-192x192.png (192x192)</li>
-<li>android-chrome-512x512.png (512x512)</li>
-</ul>
-<p>into <code>/static</code>. They’re easily created via <a href="https://realfavicongenerator.net/" target="_blank" rel="noopener noreffer">https://realfavicongenerator.net/</a>
-.</p>
-<p>Customize <code>browserconfig.xml</code> and <code>site.webmanifest</code> to set theme-color and background-color.</p>
-<h3 id="33-add-logo-and-cover-for-seo">3.3 Add Logo and Cover for SEO</h3>
-<p>Add a logo image (127x40) and a cover image (800x600) in the <code>static</code> directory.</p>
-<h3 id="34-style-customization">3.4 Style Customization</h3>
-<p><strong>LoveIt</strong> theme has been built to be as configurable as possible by defining custom <code>.scss</code> style files.</p>
-<p>The directory including the custom <code>.scss</code> style files is <code>config/css</code> relative to <strong>your project path</strong>.</p>
-<p>In <code>_override.scss</code>, you can override the variables in <code>themes/LoveIt/assets/css/_variables.scss</code> to customize the style.</p>
-<p>Here is a example:</p>
+<p><code>public</code> 폴더 내용을 push 합니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
+</span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-scss" data-lang="scss"><span class="k">@import</span> <span class="sx">url(&#34;https://fonts.googleapis.com/css?family=Fira+Mono:400,700&amp;display=swap&amp;subset=latin-ext&#34;)</span><span class="p">;</span>
-<span class="nv">$code-font-family</span><span class="o">:</span> <span class="n">Fira</span> <span class="n">Mono</span><span class="o">,</span> <span class="n">Source</span> <span class="n">Code</span> <span class="n">Pro</span><span class="o">,</span> <span class="n">Menlo</span><span class="o">,</span> <span class="n">Consolas</span><span class="o">,</span> <span class="n">Monaco</span><span class="o">,</span>
-  <span class="no">monospace</span><span class="p">;</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> public
+git add .
+git commit -m <span class="s2">&#34;First Commit&#34;</span>
+git push origin master
 </code></pre></td></tr></table>
 </div>
-</div><p>In <code>_custom.scss</code>, you can add some css style code to customize the style.</p>
-<h2 id="4-multilingual-and-i18n">4 Multilingual and i18n</h2>
-<p><strong>LoveIt</strong> theme is fully compatible with Hugo multilingual mode.</p>
-<p>It provides:</p>
-<ul>
-<li>Translation strings for default values (<strong>English</strong>, <strong>Chinese</strong> and <strong>French</strong>). <strong>Feel free to contribute!</strong></li>
-<li>In-browser language switching</li>
-</ul>
-<p><figure><a class="lightgallery" href="/images/theme-documentation-basics/language-switch.gif" title="Language Switch" data-thumbnail="/images/theme-documentation-basics/language-switch.gif" data-sub-html="<h2>Language Switch</h2><p>Language Switch</p>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-sizes="auto"
-            data-srcset="/images/theme-documentation-basics/language-switch.gif, /images/theme-documentation-basics/language-switch.gif 1.5x, /images/theme-documentation-basics/language-switch.gif 2x"
-            data-src="/images/theme-documentation-basics/language-switch.gif"
-            alt="Language Switch" />
-    </a><figcaption class="image-caption">Language Switch</figcaption>
-    </figure></p>
-<h3 id="41-basic-configuration">4.1 Basic Configuration</h3>
-<p>After learning <a href="https://gohugo.io/content-management/multilingual" target="_blank" rel="noopener noreffer">how Hugo handle multilingual websites</a>
-, define your languages in your <a href="#site-configuration" rel="noopener noreffer">site configuration</a>
-.</p>
-<p>For example with English, Chinese and French website:</p>
+</div><p>다음으로, Hugo 프로젝트 폴더를 push합니다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
-</span><span class="lnt">35
-</span><span class="lnt">36
-</span><span class="lnt">37
-</span><span class="lnt">38
-</span><span class="lnt">39
-</span><span class="lnt">40
-</span><span class="lnt">41
-</span><span class="lnt">42
-</span><span class="lnt">43
-</span><span class="lnt">44
-</span><span class="lnt">45
-</span><span class="lnt">46
-</span><span class="lnt">47
-</span><span class="lnt">48
-</span><span class="lnt">49
-</span><span class="lnt">50
-</span><span class="lnt">51
-</span><span class="lnt">52
-</span><span class="lnt">53
-</span><span class="lnt">54
-</span><span class="lnt">55
-</span><span class="lnt">56
-</span><span class="lnt">57
-</span><span class="lnt">58
-</span><span class="lnt">59
-</span><span class="lnt">60
-</span><span class="lnt">61
-</span><span class="lnt">62
-</span><span class="lnt">63
-</span><span class="lnt">64
-</span><span class="lnt">65
-</span><span class="lnt">66
-</span><span class="lnt">67
-</span><span class="lnt">68
-</span><span class="lnt">69
-</span><span class="lnt">70
-</span><span class="lnt">71
-</span><span class="lnt">72
-</span><span class="lnt">73
-</span><span class="lnt">74
-</span><span class="lnt">75
-</span><span class="lnt">76
-</span><span class="lnt">77
-</span><span class="lnt">78
-</span><span class="lnt">79
-</span><span class="lnt">80
-</span><span class="lnt">81
-</span><span class="lnt">82
-</span><span class="lnt">83
-</span><span class="lnt">84
-</span><span class="lnt">85
-</span><span class="lnt">86
-</span><span class="lnt">87
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-toml" data-lang="toml"><span class="c"># [en, zh-cn, fr, ...] determines default content language</span>
-<span class="nx">defaultContentLanguage</span> <span class="p">=</span> <span class="s2">&#34;en&#34;</span>
-
-<span class="p">[</span><span class="nx">languages</span><span class="p">]</span>
-  <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">]</span>
-    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">1</span>
-    <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;My New Hugo Site&#34;</span>
-    <span class="nx">languageCode</span> <span class="p">=</span> <span class="s2">&#34;en&#34;</span>
-    <span class="nx">languageName</span> <span class="p">=</span> <span class="s2">&#34;English&#34;</span>
-    <span class="p">[[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
-      <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;posts&#34;</span>
-      <span class="nx">pre</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
-      <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Posts&#34;</span>
-      <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;/posts/&#34;</span>
-      <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
-      <span class="nx">weight</span> <span class="p">=</span> <span class="mi">1</span>
-    <span class="p">[[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
-      <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;tags&#34;</span>
-      <span class="nx">pre</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
-      <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Tags&#34;</span>
-      <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;/tags/&#34;</span>
-      <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
-      <span class="nx">weight</span> <span class="p">=</span> <span class="mi">2</span>
-    <span class="p">[[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
-      <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;categories&#34;</span>
-      <span class="nx">pre</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
-      <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Categories&#34;</span>
-      <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;/categories/&#34;</span>
-      <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
-      <span class="nx">weight</span> <span class="p">=</span> <span class="mi">3</span>
-
-  <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">zh</span><span class="err">-</span><span class="nx">cn</span><span class="p">]</span>
-    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">2</span>
-    <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;我的全新 Hugo 网站&#34;</span>
-    <span class="c"># language code, CN only here</span>
-    <span class="nx">languageCode</span> <span class="p">=</span> <span class="s2">&#34;zh-CN&#34;</span>
-    <span class="nx">languageName</span> <span class="p">=</span> <span class="s2">&#34;简体中文&#34;</span>
-    <span class="c"># whether to include Chinese/Japanese/Korean</span>
-    <span class="nx">hasCJKLanguage</span> <span class="p">=</span> <span class="kc">true</span>
-    <span class="p">[[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">zh</span><span class="err">-</span><span class="nx">cn</span><span class="p">.</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
-      <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;posts&#34;</span>
-      <span class="nx">pre</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
-      <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;文章&#34;</span>
-      <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;/posts/&#34;</span>
-      <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
-      <span class="nx">weight</span> <span class="p">=</span> <span class="mi">1</span>
-    <span class="p">[[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">zh</span><span class="err">-</span><span class="nx">cn</span><span class="p">.</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
-      <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;tags&#34;</span>
-      <span class="nx">pre</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
-      <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;标签&#34;</span>
-      <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;/tags/&#34;</span>
-      <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
-      <span class="nx">weight</span> <span class="p">=</span> <span class="mi">2</span>
-    <span class="p">[[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">zh</span><span class="err">-</span><span class="nx">cn</span><span class="p">.</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
-      <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;categories&#34;</span>
-      <span class="nx">pre</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
-      <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;分类&#34;</span>
-      <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;/categories/&#34;</span>
-      <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
-      <span class="nx">weight</span> <span class="p">=</span> <span class="mi">3</span>
-
-  <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">fr</span><span class="p">]</span>
-    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">3</span>
-    <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;Mon nouveau site Hugo&#34;</span>
-    <span class="nx">languageCode</span> <span class="p">=</span> <span class="s2">&#34;fr&#34;</span>
-    <span class="nx">languageName</span> <span class="p">=</span> <span class="s2">&#34;Français&#34;</span>
-    <span class="p">[[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">fr</span><span class="p">.</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
-      <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;posts&#34;</span>
-      <span class="nx">pre</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
-      <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Postes&#34;</span>
-      <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;/posts/&#34;</span>
-      <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
-      <span class="nx">weight</span> <span class="p">=</span> <span class="mi">1</span>
-    <span class="p">[[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">fr</span><span class="p">.</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
-      <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;tags&#34;</span>
-      <span class="nx">pre</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
-      <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Balises&#34;</span>
-      <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;/tags/&#34;</span>
-      <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
-      <span class="nx">weight</span> <span class="p">=</span> <span class="mi">2</span>
-    <span class="p">[[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">fr</span><span class="p">.</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
-      <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;categories&#34;</span>
-      <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Catégories&#34;</span>
-      <span class="nx">pre</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
-      <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;/categories/&#34;</span>
-      <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
-      <span class="nx">weight</span> <span class="p">=</span> <span class="mi">3</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ../
+git add .
+git commit -m <span class="s2">&#34;First Buil Succeed&#34;</span>
+git push origin master
 </code></pre></td></tr></table>
 </div>
-</div><p>Then, for each new page, append the language code to the file name.</p>
-<p>Single file <code>my-page.md</code> is split in three files:</p>
+</div><p>잠시 기다린 뒤, 방금 확인하였던 <code>username.github.io</code>로 접속해보면&hellip;</p>
+<img width="1619" alt="스크린샷 2020-05-02 오전 2 04 45" src="https://user-images.githubusercontent.com/12381733/80824402-5c5ea900-8c19-11ea-987e-c609815c7681.png">
+<p>웹사이트가 배포되어 있는 것이 보입니다!! 👍👍</p>
 <ul>
-<li>in English: <code>my-page.en.md</code></li>
-<li>in Chinese: <code>my-page.zh-cn.md</code></li>
-<li>in French: <code>my-page.fr.md</code></li>
+<li>
+<p>지금 상황에서 더 풍부한 포스트들을 추가할 수도 있고, 댓글 기능, 좋아요 기능 등 추가적인 커스터마이징을 할 수도 있습니다.</p>
+</li>
+<li>
+<p>더불어 여기서 사용된 <code>LoveIt</code>은 언어별 컨텐츠 관리, 차트 그리기, 지도 표시 등 계속해서 기능의 발전을 거듭하고 있습니다.</p>
+</li>
 </ul>
-<div class="admonition note">
-            <p class="admonition-title"><i class="icon fas fa-pencil-alt"></i>Note</p>
-            <div class="admonition-content">Be aware that only translated pages are displayed in menu. It’s not replaced with default language content.</div>
-        </div>
-<div class="admonition tip">
-            <p class="admonition-title"><i class="icon fas fa-lightbulb"></i>Tip</p>
-            <div class="admonition-content">Use <a href="https://gohugo.io/content-management/multilingual/#translate-your-content" target="_blank" rel="noopener noreffer">Front Matter parameter</a>
- to translate urls too.</div>
-        </div>
-<h3 id="42-overwrite-translation-strings">4.2 Overwrite Translation Strings</h3>
-<p>Translations strings are used for common default values used in the theme. Translations are available in <strong>English</strong>, <strong>Chinese</strong> and <strong>French</strong>, but you may use another language or want to override default values.</p>
-<p>To override these values, create a new file in your local i18n folder <code>i18n/&lt;languageCode&gt;.toml</code> and inspire yourself from <code>themes/LoveIt/i18n/en.toml</code>.</p>
-<p>By the way, as these translations could be used by other people, please take the time to propose a translation by <a href="https://github.com/dillonzq/LoveIt/pulls" target="_blank" rel="noopener noreffer">making a PR</a>
- to the theme!</p></div><div class="post-footer" id="post-footer">
+<hr>
+<p>제가 준비한 컨텐츠는 여기까지입니다.
+첫 글이기 때문에 미흡한 점이 많아 피드백은 적극 수용하겠습니다.</p>
+<p>추가적으로, 튜토리얼 중 문제가 생겼다면 댓글로 질문해주세요!! 💪💪</p>
+<hr>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://github.com/Integerous/Integerous.github.io" target="_blank" rel="noopener noreffer">Hugo로 github.io 블로그 만들기</a>
+</li>
+<li><a href="https://ialy1595.github.io/post/blog-construct-1/" target="_blank" rel="noopener noreffer">블로그 구축기 1 (Hugo + github.io)</a>
+</li>
+<li><a href="https://git-scm.com/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EC%84%9C%EB%B8%8C%EB%AA%A8%EB%93%88" target="_blank" rel="noopener noreffer">Git 도구 - 서브모듈</a>
+</li>
+<li><a href="https://hugoloveit.com/" target="_blank" rel="noopener noreffer">LoveIt Document</a>
+</li>
+</ul></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
