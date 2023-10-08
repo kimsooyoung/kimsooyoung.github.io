@@ -513,6 +513,7 @@ header .navbar.animate {
 #achievements .card-text {
     background-color: var(--secondary-color) !important;
     color: var(--text-secondary-color) !important;
+    font-size: .9rem;
 }
 
 #achievements img {
