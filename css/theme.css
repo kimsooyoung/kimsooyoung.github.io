@@ -45,8 +45,3 @@ body *::selection {
     color: var(--text-color) !important;
     background-color: var(--primary-color) !important;
 }
-
-img {
-    width: 80%;
-    height: 150px;
-}
