@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Robot Project on Sooyoung&#39;s Portfolio</title>
+    <link>https://hugo-profile.netlify.app/tags/robot-project/</link>
+    <description>Recent content in Robot Project on Sooyoung&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 14 Oct 2023 16:35:48 +0900</lastBuildDate><atom:link href="https://hugo-profile.netlify.app/tags/robot-project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>E-Scooter data analysis and Data-driven operation</title>
+      <link>https://hugo-profile.netlify.app/blogs/xingxing/</link>
+      <pubDate>Sat, 14 Oct 2023 16:35:48 +0900</pubDate>
+      
+      <guid>https://hugo-profile.netlify.app/blogs/xingxing/</guid>
+      <description> User usage pattern analysis from GPS Data from E-Scooter Whole Dashboard development with User Data, Scooter Data, Operation Data, and Finance Data Planned data-driven operation strategies using results from data analysis </description>
+    </item>
+    
+    <item>
+      <title>Autonomous indoor delivery robot for housing complexes</title>
+      <link>https://hugo-profile.netlify.app/blogs/watt/</link>
+      <pubDate>Fri, 13 Oct 2023 16:35:48 +0900</pubDate>
+      
+      <guid>https://hugo-profile.netlify.app/blogs/watt/</guid>
+      <description> Self-driving system and Finite State Machine Implementation for package Pick and Drop Inter-floor movement via elevator button pressing (Button recognition using deep learning, Button press through Manipulator) Floor recognition through barometer used in drones and multi-floor mapping for localization Cost reduction using high-power motors/batteries used for personal transportation Belt type mechanisms for package Pick and Drop Used NVIDIA Jetson NX, RGB-D Camera, 2D Lidar, Short range Ultrasonic sensor </description>
+    </item>
+    
+    <item>
+      <title>Low-cost Mobile Robot Platform for Outdoor Applications</title>
+      <link>https://hugo-profile.netlify.app/blogs/roba/</link>
+      <pubDate>Thu, 12 Oct 2023 16:35:48 +0900</pubDate>
+      
+      <guid>https://hugo-profile.netlify.app/blogs/roba/</guid>
+      <description> Practical and powerful hardware by using motor and batteries used in Personal transportations. Fabricated through CNC milling, Integrated bicycle shock absorber, industrial spring for suspension system BLDC motor controller and 4-wheel type robot control software design Adopted Web-RTC for Real-time monitoring/control system </description>
+    </item>
+    
+    <item>
+      <title>Mars Exploration Concept Vehicle Race</title>
+      <link>https://hugo-profile.netlify.app/blogs/race/</link>
+      <pubDate>Thu, 12 Oct 2023 16:35:48 +0900</pubDate>
+      
+      <guid>https://hugo-profile.netlify.app/blogs/race/</guid>
+      <description> Remote racing competition after installing a Mars exploration concept racing track Racing hardware design based on RC car chassis. And attached front, rear cameras and goal line detection sensors WebRTC integration for real-time control and monitoring (Verified through Korea to Japan remote control) </description>
+    </item>
+    
+    <item>
+      <title>ROS 2-based educational purpose self-driving vehicle </title>
+      <link>https://hugo-profile.netlify.app/blogs/rlcar/</link>
+      <pubDate>Wed, 11 Oct 2023 16:35:48 +0900</pubDate>
+      
+      <guid>https://hugo-profile.netlify.app/blogs/rlcar/</guid>
+      <description> Micro-ROS-based control / odometry firmware Self-driving systems using IMU, Camera, Lidar, and GPS (optional) Training curriculum for all robot development processes from CAD to Real Robot Currently selling to various universities and institutions across the country </description>
+    </item>
+    
+    <item>
+      <title>High-precision Autonomous Mobile Robot for Manufacturing</title>
+      <link>https://hugo-profile.netlify.app/blogs/agv/</link>
+      <pubDate>Tue, 10 Oct 2023 16:35:48 +0900</pubDate>
+      
+      <guid>https://hugo-profile.netlify.app/blogs/agv/</guid>
+      <description> CANopen-based motor control / Differential Drive, Quad Drive robot controller and odometry ROS 2 driver development for industrial laser scanner Open Source-Based High Accuracy Localization CAD-based robot simulations and multi-robot operation simulation MPC-based Trajectory Following Controller in order to 1cm static precision Will be applied to semiconductor / electric battery production facilities through AGV Control System (ACS) integration </description>
+    </item>
+    
+  </channel>
+</rss>

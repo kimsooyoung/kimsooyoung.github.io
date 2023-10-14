@@ -6,19 +6,59 @@
     <description>Recent content on Sooyoung&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Dec 2022 19:53:33 +0530</lastBuildDate><atom:link href="https://hugo-profile.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Oct 2023 16:35:48 +0900</lastBuildDate><atom:link href="https://hugo-profile.netlify.app/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Render Math With Mathjax</title>
-      <link>https://hugo-profile.netlify.app/blogs/math/</link>
-      <pubDate>Fri, 09 Dec 2022 19:53:33 +0530</pubDate>
+      <title>E-Scooter data analysis and Data-driven operation</title>
+      <link>https://hugo-profile.netlify.app/blogs/xingxing/</link>
+      <pubDate>Sat, 14 Oct 2023 16:35:48 +0900</pubDate>
       
-      <guid>https://hugo-profile.netlify.app/blogs/math/</guid>
-      <description>Mathjax Math equations can be rendered using Mathjax syntax with AMS symbol support.
-Optionally enable this on a per-page basis by adding mathjax: true to your frontmatter.
-Then, use $$ ... $$ on a line by itself to render a block equation:
-$$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow P_{2}} [A(x) = 1] | &amp;lt; \text{negligible} $$
-The raw version is:
-$$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow P_{2}} [A(x) = 1] | &amp;lt; \text{negligible} $$ Write in-line equations with \\( .</description>
+      <guid>https://hugo-profile.netlify.app/blogs/xingxing/</guid>
+      <description> User usage pattern analysis from GPS Data from E-Scooter Whole Dashboard development with User Data, Scooter Data, Operation Data, and Finance Data Planned data-driven operation strategies using results from data analysis </description>
+    </item>
+    
+    <item>
+      <title>Autonomous indoor delivery robot for housing complexes</title>
+      <link>https://hugo-profile.netlify.app/blogs/watt/</link>
+      <pubDate>Fri, 13 Oct 2023 16:35:48 +0900</pubDate>
+      
+      <guid>https://hugo-profile.netlify.app/blogs/watt/</guid>
+      <description> Self-driving system and Finite State Machine Implementation for package Pick and Drop Inter-floor movement via elevator button pressing (Button recognition using deep learning, Button press through Manipulator) Floor recognition through barometer used in drones and multi-floor mapping for localization Cost reduction using high-power motors/batteries used for personal transportation Belt type mechanisms for package Pick and Drop Used NVIDIA Jetson NX, RGB-D Camera, 2D Lidar, Short range Ultrasonic sensor </description>
+    </item>
+    
+    <item>
+      <title>Low-cost Mobile Robot Platform for Outdoor Applications</title>
+      <link>https://hugo-profile.netlify.app/blogs/roba/</link>
+      <pubDate>Thu, 12 Oct 2023 16:35:48 +0900</pubDate>
+      
+      <guid>https://hugo-profile.netlify.app/blogs/roba/</guid>
+      <description> Practical and powerful hardware by using motor and batteries used in Personal transportations. Fabricated through CNC milling, Integrated bicycle shock absorber, industrial spring for suspension system BLDC motor controller and 4-wheel type robot control software design Adopted Web-RTC for Real-time monitoring/control system </description>
+    </item>
+    
+    <item>
+      <title>Mars Exploration Concept Vehicle Race</title>
+      <link>https://hugo-profile.netlify.app/blogs/race/</link>
+      <pubDate>Thu, 12 Oct 2023 16:35:48 +0900</pubDate>
+      
+      <guid>https://hugo-profile.netlify.app/blogs/race/</guid>
+      <description> Remote racing competition after installing a Mars exploration concept racing track Racing hardware design based on RC car chassis. And attached front, rear cameras and goal line detection sensors WebRTC integration for real-time control and monitoring (Verified through Korea to Japan remote control) </description>
+    </item>
+    
+    <item>
+      <title>ROS 2-based educational purpose self-driving vehicle </title>
+      <link>https://hugo-profile.netlify.app/blogs/rlcar/</link>
+      <pubDate>Wed, 11 Oct 2023 16:35:48 +0900</pubDate>
+      
+      <guid>https://hugo-profile.netlify.app/blogs/rlcar/</guid>
+      <description> Micro-ROS-based control / odometry firmware Self-driving systems using IMU, Camera, Lidar, and GPS (optional) Training curriculum for all robot development processes from CAD to Real Robot Currently selling to various universities and institutions across the country </description>
+    </item>
+    
+    <item>
+      <title>High-precision Autonomous Mobile Robot for Manufacturing</title>
+      <link>https://hugo-profile.netlify.app/blogs/agv/</link>
+      <pubDate>Tue, 10 Oct 2023 16:35:48 +0900</pubDate>
+      
+      <guid>https://hugo-profile.netlify.app/blogs/agv/</guid>
+      <description> CANopen-based motor control / Differential Drive, Quad Drive robot controller and odometry ROS 2 driver development for industrial laser scanner Open Source-Based High Accuracy Localization CAD-based robot simulations and multi-robot operation simulation MPC-based Trajectory Following Controller in order to 1cm static precision Will be applied to semiconductor / electric battery production facilities through AGV Control System (ACS) integration </description>
     </item>
     
     <item>
@@ -28,50 +68,6 @@ $$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow P_{2}} [A(x) = 1] | &
       
       <guid>https://hugo-profile.netlify.app/gallery/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Markdown Syntax</title>
-      <link>https://hugo-profile.netlify.app/blogs/markdown-syntax/</link>
-      <pubDate>Sat, 03 Apr 2021 23:29:21 +0530</pubDate>
-      
-      <guid>https://hugo-profile.netlify.app/blogs/markdown-syntax/</guid>
-      <description>Paragraph Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga.</description>
-    </item>
-    
-    <item>
-      <title>Emoji Support</title>
-      <link>https://hugo-profile.netlify.app/blogs/emoji-support/</link>
-      <pubDate>Sat, 03 Apr 2021 22:53:58 +0530</pubDate>
-      
-      <guid>https://hugo-profile.netlify.app/blogs/emoji-support/</guid>
-      <description>Emoji can be enabled in a Hugo project in a number of ways. :zap:
-Emoji Support The emojify function can be called directly in templates or Inline Shortcodes.
-To enable emoji globally, set enableEmoji to true in your site’s configuration and then you can type emoji shorthand codes directly in content files; e.g.
-The Emoji cheat sheet is a useful reference for emoji shorthand codes.
-N.B. The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform.</description>
-    </item>
-    
-    <item>
-      <title>Placeholder Text</title>
-      <link>https://hugo-profile.netlify.app/blogs/placeholder-text/</link>
-      <pubDate>Sat, 03 Apr 2021 22:41:10 +0530</pubDate>
-      
-      <guid>https://hugo-profile.netlify.app/blogs/placeholder-text/</guid>
-      <description>Lorem est tota propiore conpellat pectoribus de pectora summo.
-Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.
-Exierant elisi ambit vivere dedere Duce pollice Eris modo Spargitque ferrea quos palude Rursus nulli murmur; hastile inridet ut ab gravi sententia!</description>
-    </item>
-    
-    <item>
-      <title>Rich Content</title>
-      <link>https://hugo-profile.netlify.app/blogs/rich-content/</link>
-      <pubDate>Sat, 03 Apr 2021 19:53:33 +0530</pubDate>
-      
-      <guid>https://hugo-profile.netlify.app/blogs/rich-content/</guid>
-      <description>Hugo ships with several Built-in Shortcodes for rich content, along with a Privacy Config and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.
-Gist Simple Shortcode {{&amp;lt; gist spf13 7896402 &amp;#34;img.html&amp;#34; &amp;gt;}} Twitter Simple Shortcode {{&amp;lt; tweet GoHugoIO 1315233626070503424 &amp;gt;}} Profile is a customizable single-page portfolio theme for Hugo featuring a contact form and blog. Made by @gurusabarishh.https://t.co/KwYcwfdy16
-&amp;mdash; GoHugo.io (@GoHugoIO) October 11, 2020 Vimeo Simple Shortcode {{&amp;lt; vimeo 146022717 &amp;gt;}} Youtube Simple Shortcode {{&amp;lt; youtube w7Ft2ymGmfc &amp;gt;}} Theme Custom Shortcodes These shortcodes are not Hugo built-ins, but are provided by the theme.</description>
     </item>
     
   </channel>
