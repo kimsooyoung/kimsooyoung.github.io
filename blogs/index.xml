@@ -6,7 +6,16 @@
     <description>Recent content in Blogs on Sooyoung&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Oct 2023 16:35:48 +0900</lastBuildDate><atom:link href="https://hugo-profile.netlify.app/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Oct 2023 16:35:48 +0900</lastBuildDate><atom:link href="https://hugo-profile.netlify.app/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>High-precision Autonomous Mobile Robot for Manufacturing</title>
+      <link>https://hugo-profile.netlify.app/blogs/agv/</link>
+      <pubDate>Sun, 15 Oct 2023 16:35:48 +0900</pubDate>
+      
+      <guid>https://hugo-profile.netlify.app/blogs/agv/</guid>
+      <description> CANopen-based motor control / Differential Drive, Quad Drive robot controller and odometry ROS 2 driver development for industrial laser scanner Open Source-Based High Accuracy Localization CAD-based robot simulations and multi-robot operation simulation MPC-based Trajectory Following Controller in order to 1cm static precision Will be applied to semiconductor / electric battery production facilities through AGV Control System (ACS) integration </description>
+    </item>
+    
     <item>
       <title>E-Scooter data analysis and Data-driven operation</title>
       <link>https://hugo-profile.netlify.app/blogs/xingxing/</link>
@@ -53,12 +62,12 @@
     </item>
     
     <item>
-      <title>High-precision Autonomous Mobile Robot for Manufacturing</title>
-      <link>https://hugo-profile.netlify.app/blogs/agv/</link>
-      <pubDate>Tue, 10 Oct 2023 16:35:48 +0900</pubDate>
+      <title>Quadruped Robot</title>
+      <link>https://hugo-profile.netlify.app/blogs/quadruped/</link>
+      <pubDate>Mon, 09 Oct 2023 16:35:48 +0900</pubDate>
       
-      <guid>https://hugo-profile.netlify.app/blogs/agv/</guid>
-      <description> CANopen-based motor control / Differential Drive, Quad Drive robot controller and odometry ROS 2 driver development for industrial laser scanner Open Source-Based High Accuracy Localization CAD-based robot simulations and multi-robot operation simulation MPC-based Trajectory Following Controller in order to 1cm static precision Will be applied to semiconductor / electric battery production facilities through AGV Control System (ACS) integration </description>
+      <guid>https://hugo-profile.netlify.app/blogs/quadruped/</guid>
+      <description> Development and sale of ROS / ROS 2-based quadruped robot control software Various Robot Simulation Development (Gazebo / NVIDIA Isaac Sim) Sensor and processor mount design, SLAM and Localization demonstrations MPC and Deep Reinforcement Learning controller development for training curriculum </description>
     </item>
     
   </channel>

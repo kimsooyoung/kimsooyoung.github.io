@@ -3,18 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://hugo-profile.netlify.app/blogs/</loc>
-    <lastmod>2023-10-14T16:35:48+09:00</lastmod>
+    <lastmod>2023-10-15T16:35:48+09:00</lastmod>
   </url><url>
-    <loc>https://hugo-profile.netlify.app/blogs/xingxing/</loc>
-    <lastmod>2023-10-14T16:35:48+09:00</lastmod>
+    <loc>https://hugo-profile.netlify.app/blogs/agv/</loc>
+    <lastmod>2023-10-15T16:35:48+09:00</lastmod>
   </url><url>
     <loc>https://hugo-profile.netlify.app/tags/robot-project/</loc>
-    <lastmod>2023-10-14T16:35:48+09:00</lastmod>
+    <lastmod>2023-10-15T16:35:48+09:00</lastmod>
   </url><url>
     <loc>https://hugo-profile.netlify.app/</loc>
-    <lastmod>2023-10-14T16:35:48+09:00</lastmod>
+    <lastmod>2023-10-15T16:35:48+09:00</lastmod>
   </url><url>
     <loc>https://hugo-profile.netlify.app/tags/</loc>
+    <lastmod>2023-10-15T16:35:48+09:00</lastmod>
+  </url><url>
+    <loc>https://hugo-profile.netlify.app/blogs/xingxing/</loc>
     <lastmod>2023-10-14T16:35:48+09:00</lastmod>
   </url><url>
     <loc>https://hugo-profile.netlify.app/blogs/watt/</loc>
@@ -29,8 +32,8 @@
     <loc>https://hugo-profile.netlify.app/blogs/rlcar/</loc>
     <lastmod>2023-10-11T16:35:48+09:00</lastmod>
   </url><url>
-    <loc>https://hugo-profile.netlify.app/blogs/agv/</loc>
-    <lastmod>2023-10-10T16:35:48+09:00</lastmod>
+    <loc>https://hugo-profile.netlify.app/blogs/quadruped/</loc>
+    <lastmod>2023-10-09T16:35:48+09:00</lastmod>
   </url><url>
     <loc>https://hugo-profile.netlify.app/gallery/</loc>
     <lastmod>2022-06-25T18:35:46+05:30</lastmod>
